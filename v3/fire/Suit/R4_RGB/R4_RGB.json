@@ -1,0 +1,2707 @@
+{
+  "name": "RGB_suit_R4_RGB",
+  "vendorId": "0x4321",
+  "productId": "0x0012",
+  "keycodes": ["qmk_lighting"],
+  "customKeycodes": [
+    {
+      "name": "Windows\nFN",
+      "title": "windows\u7cfb\u7edfFn\u952e",
+      "shortName": "Windows\nFN"
+    },
+    {
+      "name": "MACOS\nFN",
+      "title": "macos\u7cfb\u7edfFn\u952e",
+      "shortName": "MACOS\nFN"
+    },
+    {
+      "name": "\u5e95\u706f\n\u5f00\u5173",
+      "title": "\u5e95\u706f\u5f00\u5173",
+      "shortName": "UGRGB\nTOG"
+    },
+    {
+      "name": "\u8f74\u706f\n\u5f00\u5173",
+      "title": "\u8f74\u706f\u5f00\u5173",
+      "shortName": "\u8f74\u706f\n\u5f00\u5173"
+    },
+    {
+      "name": "\u6307\u793a\u706f\u5f00\u5173",
+      "title": "\u6307\u793a\u706f\u5f00\u5173\uff08\u5173\u95ed\u5168\u5c40\u706f\u5149\u540e\u662f\u5426\u6b63\u5e38\u4eae\u8d77\uff09",
+      "shortName": "IndRGB\nTog"
+    },
+    {
+      "name": "\u5e95\u706f\n\u540c\u6b65",
+      "title": "\u5e95\u706f\u548c\u5168\u5c40\u706f\u6548\u540c\u6b65",
+      "shortName": "UGRGB\nMODS"
+    },
+    {
+      "name": "\u5e95\u706f\n\u706f\u6548+",
+      "title": "\u4e0b\u4e00\u4e2a\u5e95\u706f\u706f\u6548",
+      "shortName": "UGRGB\nMOD+"
+    },
+    {
+      "name": "\u5e95\u706f\n\u706f\u6548-",
+      "title": "\u4e0a\u4e00\u4e2a\u5e95\u706f\u706f\u6548",
+      "shortName": "UGRGB\nMOD-"
+    },
+    {
+      "name": "\u5e95\u706f\n\u8272\u76f8+",
+      "title": "\u589e\u52a0\u5e95\u706f\u8272\u76f8",
+      "shortName": "UGRGB\nHue+"
+    },
+    {
+      "name": "\u5e95\u706f\n\u8272\u76f8-",
+      "title": "\u964d\u4f4e\u5e95\u706f\u8272\u76f8",
+      "shortName": "UGRGB\nHue-"
+    },
+    {
+      "name": "\u5e95\u706f\n\u9971\u548c+",
+      "title": "\u589e\u52a0\u5e95\u706f\u9971\u548c\u5ea6",
+      "shortName": "UGRGB\nSat+"
+    },
+    {
+      "name": "\u5e95\u706f\n\u9971\u548c-",
+      "title": "\u964d\u4f4e\u5e95\u706f\u9971\u548c\u5ea6",
+      "shortName": "UGRGB\nSat-"
+    },
+    {
+      "name": "\u5e95\u706f\n\u4eae\u5ea6+",
+      "title": "\u589e\u52a0\u5e95\u706f\u4eae\u5ea6",
+      "shortName": "UGRGB\nVal+"
+    },
+    {
+      "name": "\u5e95\u706f\n\u4eae\u5ea6-",
+      "title": "\u964d\u4f4e\u5e95\u706f\u4eae\u5ea6",
+      "shortName": "UGRGB\nVal-"
+    },
+    {
+      "name": "\u5e95\u706f\n\u901f\u5ea6+",
+      "title": "\u589e\u52a0\u5e95\u706f\u706f\u6548\u901f\u5ea6",
+      "shortName": "UGRGB\nSPD+"
+    },
+    {
+      "name": "\u5e95\u706f\n\u901f\u5ea6-",
+      "title": "\u964d\u4f4e\u5e95\u706f\u706f\u6548\u901f\u5ea6",
+      "shortName": "UGRGB\nSPD-"
+    }
+  ],
+  "menus": [
+    {
+      "label": "\u706f\u5149",
+      "content": [
+        {
+          "label": "\u706f\u5149\u8bbe\u7f6e",
+          "content": [
+            {
+              "label": "\u5168\u5c40\u706f\u5149\u5f00\u5173",
+              "type": "toggle",
+              "content": [
+                "id_rgb_matrix_toggle[0]",
+                5,
+                1,
+                0
+              ]
+            },
+            {
+              "label": "\u8f74\u706f\u5f00\u5173",
+              "type": "toggle",
+              "content": [
+                "id_rgb_matrix_toggle[1]",
+                5,
+                1,
+                1
+              ]
+            },
+            {
+              "label": "\u6761\u706f\u5f00\u5173",
+              "type": "toggle",
+              "content": [
+                "id_rgb_matrix_toggle[2]",
+                5,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "label": "\u8f74\u706f",
+          "content": [
+            {
+              "label": "\u4eae\u5ea6",
+              "type": "range",
+              "options": [
+                0,
+                200
+              ],
+              "content": [
+                "id_qmk_rgb_matrix_brightness",
+                3,
+                1
+              ]
+            },
+            {
+              "label": "\u706f\u6548",
+              "type": "dropdown",
+              "content": [
+                "id_qmk_rgb_matrix_effect",
+                3,
+                2
+              ],
+              "options": [
+                ["Solid Color", 1],
+                ["Alphas Mods", 2],
+                ["Gradient Up/Down", 3],
+                ["Gradient Left/Right", 4],
+                ["Breathing", 5],
+                ["Band Sat.", 6],
+                ["Band Val.", 7],
+                ["Pinwheel Sat.", 8],
+                ["Pinwheel Val.", 9],
+                ["Spiral Sat.", 10],
+                ["Spiral Val.", 11],
+                ["Cycle All", 12],
+                ["Cycle Left/Right", 13],
+                ["Cycle Up/Down", 14],
+                ["Rainbow Moving Chevron", 15],
+                ["Cycle Out/In", 16],
+                ["Cycle Out/In Dual", 17],
+                ["Cycle Pinwheel", 18],
+                ["Cycle Spiral", 19],
+                ["Dual Beacon", 20],
+                ["Rainbow Beacon", 21],
+                ["Rainbow Pinwheels", 22],
+                ["Raindrops", 23],
+                ["Jellybean Raindrops", 24],
+                ["Hue Breathing", 25],
+                ["Hue Pendulum", 26],
+                ["Hue Wave", 27],
+                ["Pixel Rain", 28],
+                ["Pixel Flow", 29],
+                ["Pixel Fractal", 30],
+                ["Typing Heatmap", 31],
+                ["Digital Rain", 32],
+                ["Solid Reactive Simple", 33],
+                ["Solid Reactive", 34],
+                ["Solid Reactive Wide", 35],
+                ["Solid Reactive Multi Wide", 36],
+                ["Solid Reactive Cross", 37],
+                ["Solid Reactive Multi Cross", 38],
+                ["Solid Reactive Nexus", 39],
+                ["Solid Reactive Multi Nexus", 40],
+                ["Spash", 41],
+                ["Multi Splash", 42],
+                ["Solid Splash", 43],
+                ["Solid Multi Splash", 44]
+              ]
+            },
+            {
+              "showIf": "{id_qmk_rgb_matrix_effect} != 0",
+              "label": "\u901f\u5ea6",
+              "type": "range",
+              "options": [
+                0,
+                255
+              ],
+              "content": [
+                "id_qmk_rgb_matrix_effect_speed",
+                3,
+                3
+              ]
+            },
+            {
+              "showIf": "{id_qmk_rgb_matrix_effect} != 0 && {id_qmk_rgb_matrix_effect} != 24 && {id_qmk_rgb_matrix_effect} != 28 && {id_qmk_rgb_matrix_effect} != 29 && {id_qmk_rgb_matrix_effect} != 32",
+              "label": "\u989c\u8272",
+              "type": "color",
+              "content": [
+                "id_qmk_rgb_matrix_color",
+                3,
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "label": "\u6761\u706f",
+          "content": [
+            {
+              "showIf": "{id_underglow_rgb_matrix_effect} != 1",
+              "label": "\u4eae\u5ea6",
+              "type": "range",
+              "options": [
+                0,
+                200
+              ],
+              "content": [
+                "id_underglow_rgb_matrix_brightness",
+                5,
+                2
+              ]
+            },
+            {
+              "label": "\u706f\u6548",
+              "type": "dropdown",
+              "content": [
+                "id_underglow_rgb_matrix_effect",
+                5,
+                3
+              ],
+              "options": [
+                ["\u540c\u6b65\u5168\u5c40", 1],
+                ["\u5355\u8272\u547c\u5438", 2],
+                ["\u5faa\u73af\u547c\u5438", 3],
+                ["\u5faa\u73af\u6a2a\u5411\u6eda\u52a8", 4], 
+                ["\u5faa\u73af\u98ce\u8f66", 5],
+                ["\u5f69\u8679\u5faa\u73af", 6],
+                ["\u6a2a\u5411\u5f69\u8679", 7],
+                ["\u7eb5\u5411\u5f69\u8679", 8],
+                ["\u5f69\u8679\u6f29\u6da1", 9],
+                ["\u5f69\u8679\u6d9f\u6f2a", 10],
+                ["\u5f69\u8679\u98ce\u8f66", 11],
+                ["\u5f69\u8679\u87ba\u65cb", 12],
+                ["\u53d8\u901f\u6a2a\u5411\u5f69\u8679", 13],
+                 ["\u53d8\u901f\u5f69\u8679\u98ce\u8f66", 14],
+                 ["\u53d8\u901f\u5faa\u73af\u547c\u5438", 15],
+                ["\u53d8\u901f\u5f69\u8679\u87ba\u65cb", 16],
+                 ["\u53d8\u901f\u5f69\u8679\u6d9f\u6f2a", 17]
+              ]
+            },
+            {
+              "showIf": "{id_underglow_rgb_matrix_effect} != 1",
+              "label": "\u901f\u5ea6",
+              "type": "range",
+              "options": [
+                0,
+                255
+              ],
+              "content": [
+                "id_underglow_rgb_matrix_effect_speed",
+                5,
+                4
+              ]
+            },
+            {
+              "showIf": "{id_underglow_rgb_matrix_effect} != 1",
+              "label": "\u989c\u8272",
+              "type": "color",
+              "content": [
+                "id_underglow_rgb_matrix_color",
+                5,
+                5
+              ]
+            }
+          ]
+        },        
+        {
+          "label": "\u6761\u706f\u5f00\u5173",
+          "content": [
+            {
+              "label": "RGB Sector 1 Control",
+              "type": "toggle",
+              "content": [
+                "id_rgb_control_enable1",
+                66,
+                1,
+                0
+              ]
+            },
+            {
+              "showIf": "{id_rgb_control_enable1} != 0",
+              "label": "Sector 1 Brightness",
+              "type": "range",
+              "options": [
+                0,
+                200
+              ],
+              "content": [
+                "id_rgb_control_brightness1",
+                66,
+                2,
+                0
+              ]
+            },
+            {
+              "showIf": "{id_rgb_control_enable1} != 0",
+              "label": "Sector 1 Color",
+              "type": "color",
+              "content": [
+                "id_rgb_control_color1",
+                66,
+                3,
+                0
+              ]
+            },
+            {
+              "label": "RGB Sector 2 Control",
+              "type": "toggle",
+              "content": [
+                "id_rgb_control_enable2",
+                66,
+                1,
+                1
+              ]
+            },
+            {
+              "showIf": "{id_rgb_control_enable2} != 0",
+              "label": "Sector 2 Brightness",
+              "type": "range",
+              "options": [
+                0,
+                200
+              ],
+              "content": [
+                "id_rgb_control_brightness2",
+                66,
+                2,
+                1
+              ]
+            },
+            {
+              "showIf": "{id_rgb_control_enable2} != 0",
+              "label": "Sector 2 Color",
+              "type": "color",
+              "content": [
+                "id_rgb_control_color2",
+                66,
+                3,
+                1
+              ]
+            },
+            {
+              "label": "RGB Sector 3 Control",
+              "type": "toggle",
+              "content": [
+                "id_rgb_control_enable3",
+                66,
+                1,
+                2
+              ]
+            },
+            {
+              "showIf": "{id_rgb_control_enable3} != 0",
+              "label": "Sector 3 Brightness",
+              "type": "range",
+              "options": [
+                0,
+                200
+              ],
+              "content": [
+                "id_rgb_control_brightness3",
+                66,
+                2,
+                2
+              ]
+            },
+            {
+              "showIf": "{id_rgb_control_enable3} != 0",
+              "label": "Sector 3 Color",
+              "type": "color",
+              "content": [
+                "id_rgb_control_color3",
+                66,
+                3,
+                2
+              ]
+            }
+
+          ]
+        },
+
+        {
+          "label": "\u6307\u793a\u706f",
+          "content": [
+            {
+              "label": "\u6307\u793a\u706f\u5e38\u4eae",
+              "type": "toggle",
+              "content": [
+                "id_rgb_indicators_override",
+                6,
+                1
+              ]
+            },
+            {
+              "showIf": "{id_rgb_indicators_effect1} != 0",
+              "label": "Caps Lock \u4eae\u5ea6",
+              "type": "range",
+              "options": [
+                0,
+                255
+              ],
+              "content": [
+                "id_rgb_indicators_brightness[1]",
+                6,
+                2,
+                1
+              ]
+            },
+            {
+              "label": "Caps Lock \u706f\u6548",
+              "type": "dropdown",
+              "content": [
+                "id_rgb_indicators_effect1",
+                6,
+                3,
+                1
+              ],
+              "options": [
+                ["\u5173\u95ed", 0],
+                ["\u9759\u6001\u5355\u8272", 1],
+                ["\u5355\u8272\u547c\u5438", 2],
+                ["\u5faa\u73af\u547c\u5438", 3],
+                ["\u5f69\u8679\u5faa\u73af", 4],
+                ["\u968f\u673a\u53d8\u6362", 5],
+                ["\u968f\u673a\u8272\u5f69", 6]
+              ]
+            },
+            {
+              "showIf": "{id_rgb_indicators_effect1} != 0",
+              "label": "Caps Lock \u706f\u73e0",
+              "type": "dropdown",
+              "content": [
+                "id_rgb_indicators_led[1]",
+                6,
+                5,
+                1
+              ],
+              "options": [
+                [
+                  "\u5168\u90e8\u706f\u73e0",
+                  0
+                ],
+                [
+                  "\u6240\u6709\u8f74\u706f",
+                  1
+                ],
+                [
+                  "\u6240\u6709\u6761\u706f",
+                  2
+                ],
+                [
+                  "Space\u53f3",
+                  4
+                ],
+                [
+                  "Right Alt",
+                  5
+                ],
+                [
+                  "Right Win",
+                  6
+                ],
+                [
+                  "Right Ctrl",
+                  7
+                ],
+                [
+                  "Left",
+                  8
+                ],
+                [
+                  "Down",
+                  9
+                ],
+                [
+                  "Right",
+                  10
+                ],
+                [
+                  "Up",
+                  11
+                ],
+                [
+                  "Pgdn",
+                  12
+                ],
+                [
+                  "End",
+                  13
+                ],
+                [
+                  "Delete",
+                  14
+                ],
+                [
+                  "Insert",
+                  15
+                ],
+                [
+                  "Home",
+                  16
+                ],
+                [
+                  "Pgup",
+                  17
+                ],
+                [
+                  "Pause Break",
+                  18
+                ],
+                [
+                  "Scroll lock",
+                  19
+                ],
+                [
+                  "Print Screen",
+                  20
+                ],
+                [
+                  "F13",
+                  21
+                ],
+                [
+                  "F12",
+                  22
+                ],
+                [
+                  "F11",
+                  23
+                ],
+                [
+                  "F10",
+                  24
+                ],
+                [
+                  "F9",
+                  25
+                ],
+                [
+                  "F8",
+                  26
+                ],
+                [
+                  "F7",
+                  27
+                ],
+                [
+                  "F6",
+                  28
+                ],
+                [
+                  "F5",
+                  29
+                ],
+                [
+                  "F4",
+                  30
+                ],
+                [
+                  "F3",
+                  31
+                ],
+                [
+                  "F2",
+                  32
+                ],
+                [
+                  "F1",
+                  33
+                ],
+                [
+                  "ESC",
+                  34
+                ],
+                [
+                  "`~",
+                  35
+                ],
+                [
+                  "1!",
+                  36
+                ],
+                [
+                  "2@",
+                  37
+                ],
+                [
+                  "3#",
+                  38
+                ],
+                [
+                  "4$",
+                  39
+                ],
+                [
+                  "5%",
+                  40
+                ],
+                [
+                  "6^",
+                  41
+                ],
+                [
+                  "7&",
+                  42
+                ],
+                [
+                  "8*",
+                  43
+                ],
+                [
+                  "9(",
+                  44
+                ],
+                [
+                  "0)",
+                  45
+                ],
+                [
+                  "-_",
+                  46
+                ],
+                [
+                  "=+",
+                  47
+                ],
+                [
+                  "Backspace\u5de6",
+                  48
+                ],
+                [
+                  "Backspace\u4e2d",
+                  49
+                ],
+                [
+                  "Backspace\u53f3",
+                  50
+                ],
+                [
+                  "\\",
+                  51
+                ],
+                [
+                  "]}",
+                  52
+                ],
+                [
+                  "[{",
+                  53
+                ],
+                [
+                  "P",
+                  54
+                ],
+                [
+                  "O",
+                  55
+                ],
+                [
+                  "I",
+                  56
+                ],
+                [
+                  "U",
+                  57
+                ],
+                [
+                  "Y",
+                  58
+                ],
+                [
+                  "T",
+                  59
+                ],
+                [
+                  "R",
+                  60
+                ],
+                [
+                  "E",
+                  61
+                ],
+                [
+                  "W",
+                  62
+                ],
+                [
+                  "Q",
+                  63
+                ],
+                [
+                  "Tab",
+                  64
+                ],
+                [
+                  "Caps\u5de6",
+                  65
+                ],
+                [
+                  "Caps\u53f3",
+                  66
+                ],
+                [
+                  "A",
+                  67
+                ],
+                [
+                  "S",
+                  68
+                ],
+                [
+                  "D",
+                  69
+                ],
+                [
+                  "F",
+                  70
+                ],
+                [
+                  "G",
+                  71
+                ],
+                [
+                  "H",
+                  72
+                ],
+                [
+                  "J",
+                  73
+                ],
+                [
+                  "K",
+                  74
+                ],
+                [
+                  "L",
+                  75
+                ],
+                [
+                  ";:",
+                  76
+                ],
+                [
+                  "'\"",
+                  77
+                ],
+                [
+                  "Enter\u5de6",
+                  78
+                ],
+                [
+                  "Enter\u4e2d",
+                  79
+                ],
+                [
+                  "Enter\u53f3",
+                  80
+                ],
+                [
+                  "Right Shift\u53f3",
+                  81
+                ],
+                [
+                  "Right Shift\u4e2d",
+                  82
+                ],
+                [
+                  "Right Shift\u5de6",
+                  83
+                ],
+                [
+                  "/?",
+                  84
+                ],
+                [
+                  ".>",
+                  85
+                ],
+                [
+                  ",<",
+                  86
+                ],
+                [
+                  "M",
+                  87
+                ],
+                [
+                  "N",
+                  88
+                ],
+                [
+                  "B",
+                  89
+                ],
+                [
+                  "V",
+                  90
+                ],
+                [
+                  "C",
+                  91
+                ],
+                [
+                  "X",
+                  92
+                ],
+                [
+                  "Z",
+                  93
+                ],
+                [
+                  "Left Shift\u53f3",
+                  94
+                ],
+                [
+                  "Left Shift\u4e2d",
+                  95
+                ],
+                [
+                  "Left Shift\u5de6",
+                  96
+                ],
+                [
+                  "Left Ctrl",
+                  97
+                ],
+                [
+                  "Left Win",
+                  98
+                ],
+                [
+                  "Left Alt",
+                  99
+                ],
+                [
+                  "Space\u5de6",
+                  100
+                ],
+                [
+                  "Space\u4e2d",
+                  101
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u67611",
+                  102
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u67612",
+                  103
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u67613",
+                  104
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u67614",
+                  105
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u67615",
+                  106
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u67616",
+                  107
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u67617",
+                  108
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u67618",
+                  109
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u67619",
+                  110
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u676110",
+                  111
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u676111",
+                  112
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u676112",
+                  113
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u676113",
+                  114
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u676114",
+                  115
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u676115",
+                  116
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u676116",
+                  117
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u676117",
+                  118
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u676117",
+                  119
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u676116",
+                  120
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u676115",
+                  121
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u676114",
+                  122
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u676113",
+                  123
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u676112",
+                  124
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u676111",
+                  125
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u676110",
+                  126
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u67619",
+                  127
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u67618",
+                  128
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u67617",
+                  129
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u67616",
+                  130
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u67615",
+                  131
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u67614",
+                  132
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u67613",
+                  133
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u67612",
+                  134
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u67611",
+                  135
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u67611",
+                  136
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u67612",
+                  137
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u67613",
+                  138
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u67614",
+                  139
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u67615",
+                  140
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u67616",
+                  141
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u67617",
+                  142
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u67618",
+                  143
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u67619",
+                  144
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u676110",
+                  145
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u676111",
+                  146
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u676112",
+                  147
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u676113",
+                  148
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u676114",
+                  149
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u676115",
+                  150
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u676116",
+                  151
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u676117",
+                  152
+                ]
+              ]
+            },
+            {
+              "showIf": "{id_rgb_indicators_effect1} != 0",
+              "label": "Caps Lock \u989c\u8272",
+              "type": "color",
+              "content": [
+                "id_rgb_indicators_color[1]",
+                6,
+                4,
+                1
+              ]
+            },
+            {
+              "showIf": "{id_rgb_indicators_effect0} != 0",
+              "label": "Num Lock \u4eae\u5ea6",
+              "type": "range",
+              "options": [
+                0,
+                255
+              ],
+              "content": [
+                "id_rgb_indicators_brightness[0]",
+                6,
+                2,
+                0
+              ]
+            },
+            {
+              "label": "Num Lock \u706f\u6548",
+              "type": "dropdown",
+              "content": [
+                "id_rgb_indicators_effect0",
+                6,
+                3,
+                0
+              ],
+              "options": [
+                ["\u5173\u95ed", 0],
+                ["\u9759\u6001\u5355\u8272", 1],
+                ["\u5355\u8272\u547c\u5438", 2],
+                ["\u5faa\u73af\u547c\u5438", 3],
+                ["\u5f69\u8679\u5faa\u73af", 4],
+                ["\u968f\u673a\u53d8\u6362", 5],
+                ["\u968f\u673a\u8272\u5f69", 6]
+              ]
+            },
+            {
+              "showIf": "{id_rgb_indicators_effect0} != 0",
+              "label": "Num Lock \u706f\u73e0",
+              "type": "dropdown",
+              "content": [
+                "id_rgb_indicators_led[0]",
+                6,
+                5,
+                0
+              ],
+              "options": [
+                [
+                  "\u5168\u90e8\u706f\u73e0",
+                  0
+                ],
+                [
+                  "\u6240\u6709\u8f74\u706f",
+                  1
+                ],
+                [
+                  "\u6240\u6709\u6761\u706f",
+                  2
+                ],
+                [
+                  "Space\u53f3",
+                  4
+                ],
+                [
+                  "Right Alt",
+                  5
+                ],
+                [
+                  "Right Win",
+                  6
+                ],
+                [
+                  "Right Ctrl",
+                  7
+                ],
+                [
+                  "Left",
+                  8
+                ],
+                [
+                  "Down",
+                  9
+                ],
+                [
+                  "Right",
+                  10
+                ],
+                [
+                  "Up",
+                  11
+                ],
+                [
+                  "Pgdn",
+                  12
+                ],
+                [
+                  "End",
+                  13
+                ],
+                [
+                  "Delete",
+                  14
+                ],
+                [
+                  "Insert",
+                  15
+                ],
+                [
+                  "Home",
+                  16
+                ],
+                [
+                  "Pgup",
+                  17
+                ],
+                [
+                  "Pause Break",
+                  18
+                ],
+                [
+                  "Scroll lock",
+                  19
+                ],
+                [
+                  "Print Screen",
+                  20
+                ],
+                [
+                  "F13",
+                  21
+                ],
+                [
+                  "F12",
+                  22
+                ],
+                [
+                  "F11",
+                  23
+                ],
+                [
+                  "F10",
+                  24
+                ],
+                [
+                  "F9",
+                  25
+                ],
+                [
+                  "F8",
+                  26
+                ],
+                [
+                  "F7",
+                  27
+                ],
+                [
+                  "F6",
+                  28
+                ],
+                [
+                  "F5",
+                  29
+                ],
+                [
+                  "F4",
+                  30
+                ],
+                [
+                  "F3",
+                  31
+                ],
+                [
+                  "F2",
+                  32
+                ],
+                [
+                  "F1",
+                  33
+                ],
+                [
+                  "ESC",
+                  34
+                ],
+                [
+                  "`~",
+                  35
+                ],
+                [
+                  "1!",
+                  36
+                ],
+                [
+                  "2@",
+                  37
+                ],
+                [
+                  "3#",
+                  38
+                ],
+                [
+                  "4$",
+                  39
+                ],
+                [
+                  "5%",
+                  40
+                ],
+                [
+                  "6^",
+                  41
+                ],
+                [
+                  "7&",
+                  42
+                ],
+                [
+                  "8*",
+                  43
+                ],
+                [
+                  "9(",
+                  44
+                ],
+                [
+                  "0)",
+                  45
+                ],
+                [
+                  "-_",
+                  46
+                ],
+                [
+                  "=+",
+                  47
+                ],
+                [
+                  "Backspace\u5de6",
+                  48
+                ],
+                [
+                  "Backspace\u4e2d",
+                  49
+                ],
+                [
+                  "Backspace\u53f3",
+                  50
+                ],
+                [
+                  "\\",
+                  51
+                ],
+                [
+                  "]}",
+                  52
+                ],
+                [
+                  "[{",
+                  53
+                ],
+                [
+                  "P",
+                  54
+                ],
+                [
+                  "O",
+                  55
+                ],
+                [
+                  "I",
+                  56
+                ],
+                [
+                  "U",
+                  57
+                ],
+                [
+                  "Y",
+                  58
+                ],
+                [
+                  "T",
+                  59
+                ],
+                [
+                  "R",
+                  60
+                ],
+                [
+                  "E",
+                  61
+                ],
+                [
+                  "W",
+                  62
+                ],
+                [
+                  "Q",
+                  63
+                ],
+                [
+                  "Tab",
+                  64
+                ],
+                [
+                  "Caps\u5de6",
+                  65
+                ],
+                [
+                  "Caps\u53f3",
+                  66
+                ],
+                [
+                  "A",
+                  67
+                ],
+                [
+                  "S",
+                  68
+                ],
+                [
+                  "D",
+                  69
+                ],
+                [
+                  "F",
+                  70
+                ],
+                [
+                  "G",
+                  71
+                ],
+                [
+                  "H",
+                  72
+                ],
+                [
+                  "J",
+                  73
+                ],
+                [
+                  "K",
+                  74
+                ],
+                [
+                  "L",
+                  75
+                ],
+                [
+                  ";:",
+                  76
+                ],
+                [
+                  "'\"",
+                  77
+                ],
+                [
+                  "Enter\u5de6",
+                  78
+                ],
+                [
+                  "Enter\u4e2d",
+                  79
+                ],
+                [
+                  "Enter\u53f3",
+                  80
+                ],
+                [
+                  "Right Shift\u53f3",
+                  81
+                ],
+                [
+                  "Right Shift\u4e2d",
+                  82
+                ],
+                [
+                  "Right Shift\u5de6",
+                  83
+                ],
+                [
+                  "/?",
+                  84
+                ],
+                [
+                  ".>",
+                  85
+                ],
+                [
+                  ",<",
+                  86
+                ],
+                [
+                  "M",
+                  87
+                ],
+                [
+                  "N",
+                  88
+                ],
+                [
+                  "B",
+                  89
+                ],
+                [
+                  "V",
+                  90
+                ],
+                [
+                  "C",
+                  91
+                ],
+                [
+                  "X",
+                  92
+                ],
+                [
+                  "Z",
+                  93
+                ],
+                [
+                  "Left Shift\u53f3",
+                  94
+                ],
+                [
+                  "Left Shift\u4e2d",
+                  95
+                ],
+                [
+                  "Left Shift\u5de6",
+                  96
+                ],
+                [
+                  "Left Ctrl",
+                  97
+                ],
+                [
+                  "Left Win",
+                  98
+                ],
+                [
+                  "Left Alt",
+                  99
+                ],
+                [
+                  "Space\u5de6",
+                  100
+                ],
+                [
+                  "Space\u4e2d",
+                  101
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u67611",
+                  102
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u67612",
+                  103
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u67613",
+                  104
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u67614",
+                  105
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u67615",
+                  106
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u67616",
+                  107
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u67617",
+                  108
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u67618",
+                  109
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u67619",
+                  110
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u676110",
+                  111
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u676111",
+                  112
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u676112",
+                  113
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u676113",
+                  114
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u676114",
+                  115
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u676115",
+                  116
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u676116",
+                  117
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u676117",
+                  118
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u676117",
+                  119
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u676116",
+                  120
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u676115",
+                  121
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u676114",
+                  122
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u676113",
+                  123
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u676112",
+                  124
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u676111",
+                  125
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u676110",
+                  126
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u67619",
+                  127
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u67618",
+                  128
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u67617",
+                  129
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u67616",
+                  130
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u67615",
+                  131
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u67614",
+                  132
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u67613",
+                  133
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u67612",
+                  134
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u67611",
+                  135
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u67611",
+                  136
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u67612",
+                  137
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u67613",
+                  138
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u67614",
+                  139
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u67615",
+                  140
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u67616",
+                  141
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u67617",
+                  142
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u67618",
+                  143
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u67619",
+                  144
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u676110",
+                  145
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u676111",
+                  146
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u676112",
+                  147
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u676113",
+                  148
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u676114",
+                  149
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u676115",
+                  150
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u676116",
+                  151
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u676117",
+                  152
+                ]
+              ]
+            },
+            {
+              "showIf": "{id_rgb_indicators_effect0} != 0",
+              "label": "Num Lock \u989c\u8272",
+              "type": "color",
+              "content": [
+                "id_rgb_indicators_color[0]",
+                6,
+                4,
+                0
+              ]
+            },
+            {
+              "showIf": "{id_rgb_indicators_effect2} != 0",
+              "label": "Scroll Lock \u4eae\u5ea6",
+              "type": "range",
+              "options": [
+                0,
+                255
+              ],
+              "content": [
+                "id_rgb_indicators_brightness[2]",
+                6,
+                2,
+                2
+              ]
+            },
+            {
+              "label": "Scroll Lock \u706f\u6548",
+              "type": "dropdown",
+              "content": [
+                "id_rgb_indicators_effect2",
+                6,
+                3,
+                2
+              ],
+              "options": [
+                ["\u5173\u95ed", 0],
+        ["\u9759\u6001\u5355\u8272", 1],
+        ["\u5355\u8272\u547c\u5438", 2],
+        ["\u5faa\u73af\u547c\u5438", 3],
+        ["\u5f69\u8679\u5faa\u73af", 4],
+        ["\u968f\u673a\u53d8\u6362", 5],
+        ["\u968f\u673a\u8272\u5f69", 6]
+              ]
+            },
+            {
+              "showIf": "{id_rgb_indicators_effect2} != 0",
+              "label": "Scroll Lock Led",
+              "type": "dropdown",
+              "content": [
+                "id_rgb_indicators_led[2]",
+                6,
+                5,
+                2
+              ],
+              "options": [
+                [
+                  "\u5168\u90e8\u706f\u73e0",
+                  0
+                ],
+                [
+                  "\u6240\u6709\u8f74\u706f",
+                  1
+                ],
+                [
+                  "\u6240\u6709\u6761\u706f",
+                  2
+                ],
+                [
+                  "Space\u53f3",
+                  4
+                ],
+                [
+                  "Right Alt",
+                  5
+                ],
+                [
+                  "Right Win",
+                  6
+                ],
+                [
+                  "Right Ctrl",
+                  7
+                ],
+                [
+                  "Left",
+                  8
+                ],
+                [
+                  "Down",
+                  9
+                ],
+                [
+                  "Right",
+                  10
+                ],
+                [
+                  "Up",
+                  11
+                ],
+                [
+                  "Pgdn",
+                  12
+                ],
+                [
+                  "End",
+                  13
+                ],
+                [
+                  "Delete",
+                  14
+                ],
+                [
+                  "Insert",
+                  15
+                ],
+                [
+                  "Home",
+                  16
+                ],
+                [
+                  "Pgup",
+                  17
+                ],
+                [
+                  "Pause Break",
+                  18
+                ],
+                [
+                  "Scroll lock",
+                  19
+                ],
+                [
+                  "Print Screen",
+                  20
+                ],
+                [
+                  "F13",
+                  21
+                ],
+                [
+                  "F12",
+                  22
+                ],
+                [
+                  "F11",
+                  23
+                ],
+                [
+                  "F10",
+                  24
+                ],
+                [
+                  "F9",
+                  25
+                ],
+                [
+                  "F8",
+                  26
+                ],
+                [
+                  "F7",
+                  27
+                ],
+                [
+                  "F6",
+                  28
+                ],
+                [
+                  "F5",
+                  29
+                ],
+                [
+                  "F4",
+                  30
+                ],
+                [
+                  "F3",
+                  31
+                ],
+                [
+                  "F2",
+                  32
+                ],
+                [
+                  "F1",
+                  33
+                ],
+                [
+                  "ESC",
+                  34
+                ],
+                [
+                  "`~",
+                  35
+                ],
+                [
+                  "1!",
+                  36
+                ],
+                [
+                  "2@",
+                  37
+                ],
+                [
+                  "3#",
+                  38
+                ],
+                [
+                  "4$",
+                  39
+                ],
+                [
+                  "5%",
+                  40
+                ],
+                [
+                  "6^",
+                  41
+                ],
+                [
+                  "7&",
+                  42
+                ],
+                [
+                  "8*",
+                  43
+                ],
+                [
+                  "9(",
+                  44
+                ],
+                [
+                  "0)",
+                  45
+                ],
+                [
+                  "-_",
+                  46
+                ],
+                [
+                  "=+",
+                  47
+                ],
+                [
+                  "Backspace\u5de6",
+                  48
+                ],
+                [
+                  "Backspace\u4e2d",
+                  49
+                ],
+                [
+                  "Backspace\u53f3",
+                  50
+                ],
+                [
+                  "\\",
+                  51
+                ],
+                [
+                  "]}",
+                  52
+                ],
+                [
+                  "[{",
+                  53
+                ],
+                [
+                  "P",
+                  54
+                ],
+                [
+                  "O",
+                  55
+                ],
+                [
+                  "I",
+                  56
+                ],
+                [
+                  "U",
+                  57
+                ],
+                [
+                  "Y",
+                  58
+                ],
+                [
+                  "T",
+                  59
+                ],
+                [
+                  "R",
+                  60
+                ],
+                [
+                  "E",
+                  61
+                ],
+                [
+                  "W",
+                  62
+                ],
+                [
+                  "Q",
+                  63
+                ],
+                [
+                  "Tab",
+                  64
+                ],
+                [
+                  "Caps\u5de6",
+                  65
+                ],
+                [
+                  "Caps\u53f3",
+                  66
+                ],
+                [
+                  "A",
+                  67
+                ],
+                [
+                  "S",
+                  68
+                ],
+                [
+                  "D",
+                  69
+                ],
+                [
+                  "F",
+                  70
+                ],
+                [
+                  "G",
+                  71
+                ],
+                [
+                  "H",
+                  72
+                ],
+                [
+                  "J",
+                  73
+                ],
+                [
+                  "K",
+                  74
+                ],
+                [
+                  "L",
+                  75
+                ],
+                [
+                  ";:",
+                  76
+                ],
+                [
+                  "'\"",
+                  77
+                ],
+                [
+                  "Enter\u5de6",
+                  78
+                ],
+                [
+                  "Enter\u4e2d",
+                  79
+                ],
+                [
+                  "Enter\u53f3",
+                  80
+                ],
+                [
+                  "Right Shift\u53f3",
+                  81
+                ],
+                [
+                  "Right Shift\u4e2d",
+                  82
+                ],
+                [
+                  "Right Shift\u5de6",
+                  83
+                ],
+                [
+                  "/?",
+                  84
+                ],
+                [
+                  ".>",
+                  85
+                ],
+                [
+                  ",<",
+                  86
+                ],
+                [
+                  "M",
+                  87
+                ],
+                [
+                  "N",
+                  88
+                ],
+                [
+                  "B",
+                  89
+                ],
+                [
+                  "V",
+                  90
+                ],
+                [
+                  "C",
+                  91
+                ],
+                [
+                  "X",
+                  92
+                ],
+                [
+                  "Z",
+                  93
+                ],
+                [
+                  "Left Shift\u53f3",
+                  94
+                ],
+                [
+                  "Left Shift\u4e2d",
+                  95
+                ],
+                [
+                  "Left Shift\u5de6",
+                  96
+                ],
+                [
+                  "Left Ctrl",
+                  97
+                ],
+                [
+                  "Left Win",
+                  98
+                ],
+                [
+                  "Left Alt",
+                  99
+                ],
+                [
+                  "Space\u5de6",
+                  100
+                ],
+                [
+                  "Space\u4e2d",
+                  101
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u67611",
+                  102
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u67612",
+                  103
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u67613",
+                  104
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u67614",
+                  105
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u67615",
+                  106
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u67616",
+                  107
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u67617",
+                  108
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u67618",
+                  109
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u67619",
+                  110
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u676110",
+                  111
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u676111",
+                  112
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u676112",
+                  113
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u676113",
+                  114
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u676114",
+                  115
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u676115",
+                  116
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u676116",
+                  117
+                ],
+                [
+                  "\u4e2d\u95f4\u706f\u676117",
+                  118
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u676117",
+                  119
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u676116",
+                  120
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u676115",
+                  121
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u676114",
+                  122
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u676113",
+                  123
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u676112",
+                  124
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u676111",
+                  125
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u676110",
+                  126
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u67619",
+                  127
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u67618",
+                  128
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u67617",
+                  129
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u67616",
+                  130
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u67615",
+                  131
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u67614",
+                  132
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u67613",
+                  133
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u67612",
+                  134
+                ],
+                [
+                  "\u4e0a\u9762\u706f\u67611",
+                  135
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u67611",
+                  136
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u67612",
+                  137
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u67613",
+                  138
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u67614",
+                  139
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u67615",
+                  140
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u67616",
+                  141
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u67617",
+                  142
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u67618",
+                  143
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u67619",
+                  144
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u676110",
+                  145
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u676111",
+                  146
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u676112",
+                  147
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u676113",
+                  148
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u676114",
+                  149
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u676115",
+                  150
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u676116",
+                  151
+                ],
+                [
+                  "\u4e0b\u9762\u706f\u676117",
+                  152
+                ]
+              ]
+            },
+            {
+              "showIf": "{id_rgb_indicators_effect2} != 0",
+              "label": "Scroll Lock \u989c\u8272",
+              "type": "color",
+              "content": [
+                "id_rgb_indicators_color[2]",
+                6,
+                4,
+                2
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Magic\u8bbe\u7f6e",
+      "content": [
+        {
+          "label": "\u952e\u76d8\u8bbe\u7f6e",
+          "content": [
+            {
+              "label": "\u91cd\u7f6e\u5168\u90e8\u8bbe\u7f6e",
+              "type": "toggle",
+              "content": ["id_advanced_magic_settings_reset", 8, 0]
+            },
+            {
+              "label": "\u6d88\u6296\u65f6\u95f4",
+              "type": "dropdown",
+              "options": [
+                ["0ms", 0],
+                ["1ms", 1],
+                ["2ms", 2],
+                ["3ms", 3],
+                ["4ms", 4],
+                ["5ms", 5],
+                ["6ms", 6],
+                ["7ms", 7],
+                ["8ms", 8],
+                ["9ms", 9],
+                ["10ms", 10],
+                ["15ms", 15],
+                ["20ms", 20],
+                ["30ms", 30],
+                ["40ms", 40],
+                ["50ms", 50],
+                ["70ms", 70],
+                ["80ms", 80],
+                ["90ms", 90],
+                ["100ms", 100],
+                ["150ms", 150],
+                ["200ms", 200],
+                ["250ms", 250]               
+              ],
+              "content": [
+                "id_advanced_magic_debounce",
+                8,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Magic\u8bbe\u7f6e",
+          "content": [
+              {
+                  "label": "\u5f00\u542f\u5168\u952e\u65e0\u51b2",
+                  "type": "toggle",
+                  "content": ["id_magic_nkro", 7, 1]
+              },
+              {
+                  "label": "\u9501\u5b9aGui\u952e",
+                  "type": "toggle",
+                  "content": ["id_magic_no_gui", 7, 2]
+              },
+              {
+                  "label": "Caps\u952e\u89c6\u4e3aCtrl\u952e",
+                  "type": "toggle",
+                  "content": ["id_magic_capslock_to_control", 7, 3]
+              },
+              {
+                  "label": "\u4ea4\u6362Ctrl\u548cCaps\u952e",
+                  "type": "toggle",
+                  "content": ["id_magic_swap_control_capslock", 7, 4]
+              },
+              {
+                  "label": "\u4ea4\u6362ESC\u548cCaps\u952e",
+                  "type": "toggle",
+                  "content": ["id_magic_swap_escape_capslock", 7, 5]
+              },
+              {
+                  "label": "\u4ea4\u6362LAlt\u548cLGui\u952e",
+                  "type": "toggle",
+                  "content": ["id_magic_swap_lalt_lgui", 7, 6]
+              },
+              {
+                  "label": "\u4ea4\u6362RAlt\u548cRGui\u952e",
+                  "type": "toggle",
+                  "content": ["id_magic_swap_ralt_rgui", 7, 7]
+              },
+              {
+                  "label": "\u4ea4\u6362LCtrl\u548cLGui\u952e",
+                  "type": "toggle",
+                  "content": ["id_magic_swap_lctl_lgui", 7, 8]
+              },
+              {
+                  "label": "\u4ea4\u6362RCtrl\u548cRGui\u952e",
+                  "type": "toggle",
+                  "content": ["id_magic_swap_rctl_rgui", 7, 9]
+              },
+              {
+                  "label": "\u4ea4\u6362 ` \u548c Esc\u952e",
+                  "type": "toggle",
+                  "content": ["id_magic_swap_grave_esc", 7, 10]
+              },
+              {
+                  "label": "\u4ea4\u6362 \\ \u548c Backspace\u952e",
+                  "type": "toggle",
+                  "content": ["id_magic_swap_backslash_backspace", 7, 11]
+              }
+          ]
+      },
+        {
+          "label": "Grave Esc\u8bbe\u7f6e",
+          "content": [
+              {
+                  "label": "Alt\u952e\u6309\u4e0b\u65f6\u53d1\u9001Esc\u6309\u952e",
+                  "type": "toggle",
+                  "content": ["id_advanced_magic_grave_esc_override[0]", 8, 11, 0]
+              },
+              {
+                  "label": "Ctrl\u952e\u6309\u4e0b\u65f6\u53d1\u9001Esc\u6309\u952e",
+                  "type": "toggle",
+                  "content": ["id_advanced_magic_grave_esc_override[1]", 8, 11, 1]
+              },
+              {
+                  "label": "Gui\u952e\u6309\u4e0b\u65f6\u53d1\u9001Esc\u6309\u952e",
+                  "type": "toggle",
+                  "content": ["id_advanced_magic_grave_esc_override[2]", 8, 11, 2]
+              },
+              {
+                  "label": "Shift\u952e\u6309\u4e0b\u65f6\u53d1\u9001Esc\u6309\u952e",
+                  "type": "toggle",
+                  "content": ["id_advanced_magic_grave_esc_override[3]", 8, 11, 3]
+              }
+          ]
+      },
+        {
+          "label": "\u9f20\u6807\u952e\u8bbe\u7f6e",
+          "content": [
+              {
+                  "label": "\u6309\u4e0b\u79fb\u52a8\u952e\u548c\u5149\u6807\u79fb\u52a8\u4e4b\u95f4\u7684\u5ef6\u8fdf",
+                  "type": "range",
+                  "options": [0, 255],
+                  "content": ["id_advanced_magic_mk_delay", 8, 2]
+              },
+              {
+                  "label": "\u5149\u6807\u79fb\u52a8\u4e4b\u95f4\u7684\u95f4\u9694\u65f6\u95f4(ms)",
+                  "type": "range",
+                  "options": [0, 255],
+                  "content": ["id_advanced_magic_mk_interval", 8, 3]
+              },
+              {
+                  "label": "\u79fb\u52a8\u6b65\u957f",
+                  "type": "range",
+                  "options": [0, 255],
+                  "content": ["id_advanced_magic_mk_move_delta", 8, 4]
+              },
+              {
+                  "label": "\u5149\u6807\u505c\u6b62\u52a0\u901f\u65f6\u7684\u6700\u5927\u901f\u5ea6",
+                  "type": "range",
+                  "options": [0, 255],
+                  "content": ["id_advanced_magic_mk_max_speed", 8, 5]
+              },
+              {
+                  "label": "\u5149\u6807\u8fbe\u5230\u6700\u5927\u901f\u5ea6\u7684\u65f6\u95f4",
+                  "type": "range",
+                  "options": [0, 255],
+                  "content": ["id_advanced_magic_mk_time_to_max", 8, 6]
+              },
+              {
+                  "label": "\u6309\u4e0b\u6eda\u8f6e\u952e\u548c\u6eda\u8f6e\u79fb\u52a8\u4e4b\u95f4\u7684\u5ef6\u8fdf",
+                  "type": "range",
+                  "options": [0, 255],
+                  "content": ["id_advanced_magic_mk_wheel_delay", 8, 7]
+              },
+              {
+                  "label": "\u6eda\u8f6e\u79fb\u52a8\u4e4b\u95f4\u7684\u95f4\u9694\u65f6\u95f4(\u6beb\u79d2)",
+                  "type": "range",
+                  "options": [0, 255],
+                  "content": ["id_advanced_magic_mk_wheel_interval", 8, 8]
+              },
+              {
+                  "label": "\u6bcf\u6b21\u6eda\u8f6e\u52a8\u4f5c\u7684\u6700\u5927\u6eda\u8f6e\u6b65\u6570",
+                  "type": "range",
+                  "options": [0, 255],
+                  "content": ["id_advanced_magic_mk_wheel_max_speed", 8, 9]
+              },
+              {
+                  "label": "\u6eda\u8f6e\u8fbe\u5230\u6700\u5927\u6eda\u8f6e\u901f\u5ea6\u7684\u65f6\u95f4",
+                  "type": "range",
+                  "options": [0, 255],
+                  "content": ["id_advanced_magic_mk_wheel_time_to_max", 8, 10]
+              }
+          ]
+      },
+      {
+    "label": "win/mac\u8bbe\u7f6e",
+    "content": [
+        {
+            "label": "\u952e\u76d8\u5c42\u81ea\u9002\u5e94\u7cfb\u7edf\u5207\u6362",
+            "type": "toggle",
+            "content": ["id_auto_switch_layers_reset", 11, 0]
+        },
+        {
+            "label": "\u542f\u7528\u5c42\u81ea\u9002\u5e94\u7cfb\u7edf\u5207\u6362",
+            "type": "toggle",
+            "content": ["id_auto_switch_layers_config0", 11, 1, 0]
+        },
+        {
+            "showIf": "{id_auto_switch_layers_config0} != 0",
+            "label": "\u542f\u7528\u81ea\u52a8\u66f4\u65b0FN\u952e",
+            "type": "toggle",
+            "content": ["id_auto_switch_layers_config1", 11, 1, 1]
+        },
+        {
+            "showIf": "{id_auto_switch_layers_config0} != 0",
+            "label": "Windows\u5c42",
+            "type": "dropdown",
+            "content": ["id_auto_switch_layers_layer[0]", 11, 2, 0],
+            "options": [
+                ["\u5c420", 0],
+                ["\u5c421", 1],
+                ["\u5c422", 2],
+                ["\u5c423", 3],
+                ["\u5c424", 4],
+                ["\u5c425", 5]
+            ]
+        },
+        {
+            "showIf": "{id_auto_switch_layers_config0} != 0",
+            "label": "Windows Fn\u5c42",
+            "type": "dropdown",
+            "content": ["id_auto_switch_layers_layer[1]", 11, 2, 1],
+            "options": [
+              ["\u5c420", 0],
+              ["\u5c421", 1],
+              ["\u5c422", 2],
+              ["\u5c423", 3],
+              ["\u5c424", 4],
+              ["\u5c425", 5]
+            ]
+        },
+        {
+            "showIf": "{id_auto_switch_layers_config0} != 0",
+            "label": "Macos\u5c42",
+            "type": "dropdown",
+            "content": ["id_auto_switch_layers_layer[2]", 11, 2, 2],
+            "options": [
+              ["\u5c420", 0],
+              ["\u5c421", 1],
+              ["\u5c422", 2],
+              ["\u5c423", 3],
+              ["\u5c424", 4],
+              ["\u5c425", 5]
+            ]
+        },
+        {
+            "showIf": "{id_auto_switch_layers_config0} != 0",
+            "label": "Macos Fn\u5c42",
+            "type": "dropdown",
+            "content": ["id_auto_switch_layers_layer[3]", 11, 2, 3],
+            "options": [
+              ["\u5c420", 0],
+              ["\u5c421", 1],
+              ["\u5c422", 2],
+              ["\u5c423", 3],
+              ["\u5c424", 4],
+              ["\u5c425", 5]
+            ]
+        }
+    ]
+} 
+      ]
+    }
+
+  ],
+  "matrix": {"rows": 6, "cols": 17},
+  "layouts": {
+    "keymap": [
+["0,0",{"x":0.25},"0,1","0,2","0,3","0,4",{"x":0.25},"0,5","0,6","0,7","0,8",{"x":0.25},"0,9","0,10","0,11","0,12",{"x":0.25},"0,13",{"x":0.25},"0,14","0,15","0,16"],
+[{"y":0.5},"1,0","1,1","1,2","1,3","1,4","1,5","1,6","1,7","1,8","1,9","1,10","1,11","1,12",{"w":2},"1,13",{"x":0.25},"1,14","1,15","1,16"],
+[{"w":1.5},"2,0","2,1","2,2","2,3","2,4","2,5","2,6","2,7","2,8","2,9","2,10","2,11","2,12",{"w":1.5},"2,13",{"x":0.25},"2,14","2,15","2,16"],
+[{"w":1.75},"3,0","3,1","3,2","3,3","3,4","3,5","3,6","3,7","3,8","3,9","3,10","3,11",{"w":2.25},"3,13"],
+[{"w":2.25},"4,0","4,2","4,3","4,4","4,5","4,6","4,7","4,8","4,9","4,10","4,11",{"w":2.75},"4,13",{"x":1.25},"4,15"],
+[{"w":1.5},"5,0","5,1",{"w":1.5},"5,2",{"w":7},"5,5",{"w":1.5},"5,11","5,12",{"w":1.5},"5,13",{"x":0.25},"5,14","5,15","5,16"]
+    ]
+  }
+}
