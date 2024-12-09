@@ -2575,14 +2575,14 @@
               "showIf": "{id_advanced_magic_combo_config0} != 0",
               "label": "\u7ec4\u5408\u952e\u5224\u5b9a\u65f6\u95f4(ms)",
               "type": "range",
-              "options": [0, 9999],
+              "options": [0, 1000],
               "content": ["id_advanced_magic_combo_term", 8, 23]
           },
           {
               "showIf": "{id_advanced_magic_combo_config0} != 0",
               "label": "\u7ec4\u5408\u952e\u957f\u6309\u5224\u5b9a\u65f6\u95f4(ms)",
               "type": "range",
-              "options": [0, 9999],
+              "options": [0, 1000],
               "content": ["id_advanced_magic_combo_hold_term", 8, 24]
           }
       ]
@@ -2840,6 +2840,26 @@
                 0
               ]
             },
+            { 
+              "label": "\u53cc\u51fb",
+              "type": "keycode",
+              "content": [
+                "id_dynamic_tap_dance_on_triple_tap_keycode[0]",
+                9,
+                9,
+                0
+              ]
+            },
+            { 
+              "label": "\u53cc\u51fb\u5e76\u957f\u6309",
+              "type": "keycode",
+              "content": [
+                "id_dynamic_tap_dance_on_tap_tap_hold_keycode[0]",
+                9,
+                10,
+                0
+              ]
+            },   
             {
               "label": "\u5355\u51fb\u5224\u5b9a\u65f6\u95f4(ms)",
               "type": "range",
@@ -2857,7 +2877,17 @@
             {
               "label": "\u53cc\u51fb\u5feb\u901f\u89e6\u53d1",
               "type": "toggle",
-              "content": ["id_dynamic_tap_dance_quick_tap", 9, 6, 0]
+              "content": ["id_dynamic_tap_dance_quick_tap[0]", 9, 6, 0]
+            },
+            {
+              "label": "\u6309\u4e0b\u0054\u0044\u952e\u4e0e\u5176\u4ed6\u952e\u65f6\uff0c\u5f3a\u5236\u89e6\u53d1\u5355\u51fb\u952e\u7801",
+              "type": "toggle",
+              "content": ["id_dynamic_tap_dance_interrupted_tap_focus[0]", 9, 7, 0]
+            },
+            {
+              "label": "enable_triple",
+              "type": "toggle",
+              "content": ["id_dynamic_tap_dance_enable_triple[0]", 9, 11, 0]
             }
           ]
         },
@@ -2905,6 +2935,26 @@
               ]
             },
             {
+              "label": "\u53cc\u51fb",
+              "type": "keycode",
+              "content": [
+                "id_dynamic_tap_dance_on_triple_tap_keycode[1]",
+                9,
+                9,
+                1
+              ]
+            },
+            {
+              "label": "\u53cc\u51fb\u5e76\u957f\u6309",
+              "type": "keycode",
+              "content": [
+                "id_dynamic_tap_dance_on_tap_tap_hold_keycode[1]",
+                9,
+                10,
+                1
+              ]
+            }, 
+            {
               "label": "\u5355\u51fb\u5224\u5b9a\u65f6\u95f4(ms)",
               "type": "range",
               "options": [
@@ -2921,7 +2971,12 @@
             {
               "label": "\u53cc\u51fb\u5feb\u901f\u89e6\u53d1",
               "type": "toggle",
-              "content": ["id_dynamic_tap_dance_quick_tap", 9, 6, 1]
+              "content": ["id_dynamic_tap_dance_quick_tap[1]", 9, 6, 1]
+            },
+            {
+              "label": "\u6309\u4e0b\u0054\u0044\u952e\u4e0e\u5176\u4ed6\u952e\u65f6\uff0c\u5f3a\u5236\u89e6\u53d1\u5355\u51fb\u952e\u7801",
+              "type": "toggle",
+              "content": ["id_dynamic_tap_dance_interrupted_tap_focus[1]", 9, 7, 1]
             }
           ]
         },
@@ -2985,7 +3040,12 @@
             {
               "label": "\u53cc\u51fb\u5feb\u901f\u89e6\u53d1",
               "type": "toggle",
-              "content": ["id_dynamic_tap_dance_quick_tap", 9, 6, 2]
+              "content": ["id_dynamic_tap_dance_quick_tap[2]", 9, 6, 2]
+            },
+            {
+              "label": "\u6309\u4e0b\u0054\u0044\u952e\u4e0e\u5176\u4ed6\u952e\u65f6\uff0c\u5f3a\u5236\u89e6\u53d1\u5355\u51fb\u952e\u7801",
+              "type": "toggle",
+              "content": ["id_dynamic_tap_dance_interrupted_tap_focus[2]", 9, 7, 2]
             }
           ]
         },
@@ -3049,7 +3109,12 @@
             {
               "label": "\u53cc\u51fb\u5feb\u901f\u89e6\u53d1",
               "type": "toggle",
-              "content": ["id_dynamic_tap_dance_quick_tap", 9, 6, 3]
+              "content": ["id_dynamic_tap_dance_quick_tap[3]", 9, 6, 3]
+            },
+            {
+              "label": "\u6309\u4e0b\u0054\u0044\u952e\u4e0e\u5176\u4ed6\u952e\u65f6\uff0c\u5f3a\u5236\u89e6\u53d1\u5355\u51fb\u952e\u7801",
+              "type": "toggle",
+              "content": ["id_dynamic_tap_dance_interrupted_tap_focus[3]", 9, 7, 3]
             }
           ]
         },
@@ -3113,7 +3178,12 @@
             {
               "label": "\u53cc\u51fb\u5feb\u901f\u89e6\u53d1",
               "type": "toggle",
-              "content": ["id_dynamic_tap_dance_quick_tap", 9, 6, 4]
+              "content": ["id_dynamic_tap_dance_quick_tap[4]", 9, 6, 4]
+            },
+            {
+              "label": "\u6309\u4e0b\u0054\u0044\u952e\u4e0e\u5176\u4ed6\u952e\u65f6\uff0c\u5f3a\u5236\u89e6\u53d1\u5355\u51fb\u952e\u7801",
+              "type": "toggle",
+              "content": ["id_dynamic_tap_dance_interrupted_tap_focus[4]", 9, 7, 4]
             }
           ]
         },
@@ -3177,7 +3247,12 @@
             {
               "label": "\u53cc\u51fb\u5feb\u901f\u89e6\u53d1",
               "type": "toggle",
-              "content": ["id_dynamic_tap_dance_quick_tap", 9, 6, 5]
+              "content": ["id_dynamic_tap_dance_quick_tap[5]", 9, 6, 5]
+            },
+            {
+              "label": "\u6309\u4e0b\u0054\u0044\u952e\u4e0e\u5176\u4ed6\u952e\u65f6\uff0c\u5f3a\u5236\u89e6\u53d1\u5355\u51fb\u952e\u7801",
+              "type": "toggle",
+              "content": ["id_dynamic_tap_dance_interrupted_tap_focus[5]", 9, 7, 5]
             }
           ]
         },
@@ -3241,7 +3316,12 @@
             {
               "label": "\u53cc\u51fb\u5feb\u901f\u89e6\u53d1",
               "type": "toggle",
-              "content": ["id_dynamic_tap_dance_quick_tap", 9, 6, 6]
+              "content": ["id_dynamic_tap_dance_quick_tap[6]", 9, 6, 6]
+            },
+            {
+              "label": "\u6309\u4e0b\u0054\u0044\u952e\u4e0e\u5176\u4ed6\u952e\u65f6\uff0c\u5f3a\u5236\u89e6\u53d1\u5355\u51fb\u952e\u7801",
+              "type": "toggle",
+              "content": ["id_dynamic_tap_dance_interrupted_tap_focus[6]", 9, 7, 6]
             }
           ]
         },
@@ -3305,7 +3385,12 @@
             {
               "label": "\u53cc\u51fb\u5feb\u901f\u89e6\u53d1",
               "type": "toggle",
-              "content": ["id_dynamic_tap_dance_quick_tap", 9, 6, 7]
+              "content": ["id_dynamic_tap_dance_quick_tap[7]", 9, 6, 7]
+            },
+            {
+              "label": "\u6309\u4e0b\u0054\u0044\u952e\u4e0e\u5176\u4ed6\u952e\u65f6\uff0c\u5f3a\u5236\u89e6\u53d1\u5355\u51fb\u952e\u7801",
+              "type": "toggle",
+              "content": ["id_dynamic_tap_dance_interrupted_tap_focus[7]", 9, 7, 7]
             }
           ]
         },
@@ -3369,7 +3454,12 @@
             {
               "label": "\u53cc\u51fb\u5feb\u901f\u89e6\u53d1",
               "type": "toggle",
-              "content": ["id_dynamic_tap_dance_quick_tap", 9, 6, 8]
+              "content": ["id_dynamic_tap_dance_quick_tap[8]", 9, 6, 8]
+            },
+            {
+              "label": "\u6309\u4e0b\u0054\u0044\u952e\u4e0e\u5176\u4ed6\u952e\u65f6\uff0c\u5f3a\u5236\u89e6\u53d1\u5355\u51fb\u952e\u7801",
+              "type": "toggle",
+              "content": ["id_dynamic_tap_dance_interrupted_tap_focus[8]", 9, 7, 8]
             }
           ]
         },
@@ -3433,7 +3523,12 @@
             {
               "label": "\u53cc\u51fb\u5feb\u901f\u89e6\u53d1",
               "type": "toggle",
-              "content": ["id_dynamic_tap_dance_quick_tap", 9, 6, 9]
+              "content": ["id_dynamic_tap_dance_quick_tap[9]", 9, 6, 9]
+            },
+            {
+              "label": "\u6309\u4e0b\u0054\u0044\u952e\u4e0e\u5176\u4ed6\u952e\u65f6\uff0c\u5f3a\u5236\u89e6\u53d1\u5355\u51fb\u952e\u7801",
+              "type": "toggle",
+              "content": ["id_dynamic_tap_dance_interrupted_tap_focus[9]", 9, 7, 9]
             }
           ]
         }
@@ -3498,7 +3593,12 @@
             {
               "label": "\u53cc\u51fb\u5feb\u901f\u89e6\u53d1",
               "type": "toggle",
-              "content": ["id_dynamic_tap_dance_quick_tap", 9, 6, 10]
+              "content": ["id_dynamic_tap_dance_quick_tap[10]", 9, 6, 10]
+            },
+            {
+              "label": "\u6309\u4e0b\u0054\u0044\u952e\u4e0e\u5176\u4ed6\u952e\u65f6\uff0c\u5f3a\u5236\u89e6\u53d1\u5355\u51fb\u952e\u7801",
+              "type": "toggle",
+              "content": ["id_dynamic_tap_dance_interrupted_tap_focus[10]", 9, 7, 10]
             }
           ]
         }
@@ -3563,7 +3663,12 @@
             {
               "label": "\u53cc\u51fb\u5feb\u901f\u89e6\u53d1",
               "type": "toggle",
-              "content": ["id_dynamic_tap_dance_quick_tap", 9, 6, 11]
+              "content": ["id_dynamic_tap_dance_quick_tap[11]", 9, 6, 11]
+            },
+            {
+              "label": "\u6309\u4e0b\u0054\u0044\u952e\u4e0e\u5176\u4ed6\u952e\u65f6\uff0c\u5f3a\u5236\u89e6\u53d1\u5355\u51fb\u952e\u7801",
+              "type": "toggle",
+              "content": ["id_dynamic_tap_dance_interrupted_tap_focus[11]", 9, 7, 11]
             }
           ]
         }
@@ -3628,7 +3733,12 @@
             {
               "label": "\u53cc\u51fb\u5feb\u901f\u89e6\u53d1",
               "type": "toggle",
-              "content": ["id_dynamic_tap_dance_quick_tap", 9, 6, 12]
+              "content": ["id_dynamic_tap_dance_quick_tap[12]", 9, 6, 12]
+            },
+            {
+              "label": "\u6309\u4e0b\u0054\u0044\u952e\u4e0e\u5176\u4ed6\u952e\u65f6\uff0c\u5f3a\u5236\u89e6\u53d1\u5355\u51fb\u952e\u7801",
+              "type": "toggle",
+              "content": ["id_dynamic_tap_dance_interrupted_tap_focus[12]", 9, 7, 12]
             }
           ]
         }        ,
@@ -3692,7 +3802,12 @@
             {
               "label": "\u53cc\u51fb\u5feb\u901f\u89e6\u53d1",
               "type": "toggle",
-              "content": ["id_dynamic_tap_dance_quick_tap", 9, 6, 13]
+              "content": ["id_dynamic_tap_dance_quick_tap[13]", 9, 6, 13]
+            },
+            {
+              "label": "\u6309\u4e0b\u0054\u0044\u952e\u4e0e\u5176\u4ed6\u952e\u65f6\uff0c\u5f3a\u5236\u89e6\u53d1\u5355\u51fb\u952e\u7801",
+              "type": "toggle",
+              "content": ["id_dynamic_tap_dance_interrupted_tap_focus[13]", 9, 7, 13]
             }
           ]
         }        ,
@@ -3777,7 +3892,12 @@
             {
               "label": "\u53cc\u51fb\u5feb\u901f\u89e6\u53d1",
               "type": "toggle",
-              "content": ["id_dynamic_tap_dance_quick_tap", 9, 6, 14]
+              "content": ["id_dynamic_tap_dance_quick_tap[14]", 9, 6, 14]
+            },
+            {
+              "label": "\u6309\u4e0b\u0054\u0044\u952e\u4e0e\u5176\u4ed6\u952e\u65f6\uff0c\u5f3a\u5236\u89e6\u53d1\u5355\u51fb\u952e\u7801",
+              "type": "toggle",
+              "content": ["id_dynamic_tap_dance_interrupted_tap_focus[14]", 9, 7, 14]
             }
           ]
         }
@@ -3791,7 +3911,7 @@
            "content": [
             {
               "label": "\u91cd\u7f6e\u5168\u90e8\u7ec4\u5408\u952e\uff08\u952e\u76d8\u91cd\u542f\u540e\u751f\u6548\uff09",
-              "type": "toggle",
+              "type": "button",
               "content": ["id_dynamic_combos_reset", 10, 0]
           }
         ]
@@ -3887,6 +4007,72 @@
                 3,
                 0
               ]
+            },
+            {
+              "label": "enable on layer0",
+              "type": "toggle",
+              "content": [
+                "id_dynamic_combos_layer_enable[0][0]",
+                10,
+                4,
+                0,
+                0
+              ]
+            },
+            {
+              "label": "enable on layer1",
+              "type": "toggle",
+              "content": [
+                "id_dynamic_combos_layer_enable[0][1]",
+                10,
+                4,
+                0,
+                1
+              ]
+            },
+            {
+              "label": "enable on layer2",
+              "type": "toggle",
+              "content": [
+                "id_dynamic_combos_layer_enable[0][2]",
+                10,
+                4,
+                0,
+                2
+              ]
+            },
+            {
+              "label": "enable on layer3",
+              "type": "toggle",
+              "content": [
+                "id_dynamic_combos_layer_enable[0][3]",
+                10,
+                4,
+                0,
+                3
+              ]
+            },
+            {
+              "label": "enable on layer4",
+              "type": "toggle",
+              "content": [
+                "id_dynamic_combos_layer_enable[0][4]",
+                10,
+                4,
+                0,
+                4
+              ]
+            },
+            {
+              "label": "enable on layer5",
+              "type": "toggle",
+              "content": [
+                "id_dynamic_combos_layer_enable[0][5]",
+                10,
+                4,
+                0,
+                5
+              ]
             }
           ]
         },
@@ -3952,7 +4138,7 @@
               "type": "range",
               "options": [
                 1,
-                9999
+                1000
               ],
               "content": [
                 "id_dynamic_combos_combo_term[1]",
@@ -4025,7 +4211,7 @@
               "type": "range",
               "options": [
                 1,
-                9999
+                1000
               ],
               "content": [
                 "id_dynamic_combos_combo_term[2]",
@@ -4098,7 +4284,7 @@
               "type": "range",
               "options": [
                 1,
-                9999
+                1000
               ],
               "content": [
                 "id_dynamic_combos_combo_term[3]",
@@ -4171,7 +4357,7 @@
               "type": "range",
               "options": [
                 1,
-                9999
+                1000
               ],
               "content": [
                 "id_dynamic_combos_combo_term[4]",
@@ -4244,7 +4430,7 @@
               "type": "range",
               "options": [
                 1,
-                9999
+                1000
               ],
               "content": [
                 "id_dynamic_combos_combo_term[5]",
@@ -4317,7 +4503,7 @@
               "type": "range",
               "options": [
                 1,
-                9999
+                1000
               ],
               "content": [
                 "id_dynamic_combos_combo_term[6]",
@@ -4390,7 +4576,7 @@
               "type": "range",
               "options": [
                 1,
-                9999
+                1000
               ],
               "content": [
                 "id_dynamic_combos_combo_term[7]",
@@ -4463,7 +4649,7 @@
               "type": "range",
               "options": [
                 1,
-                9999
+                1000
               ],
               "content": [
                 "id_dynamic_combos_combo_term[8]",
@@ -4536,7 +4722,7 @@
               "type": "range",
               "options": [
                 1,
-                9999
+                1000
               ],
               "content": [
                 "id_dynamic_combos_combo_term[9]",
@@ -5152,43 +5338,43 @@
               {
                   "label": "\u603b\u5f00\u5173",
                   "type": "toggle",
-                  "content": ["id_dynamic_quick_repeat_enable", 14, 1]
+                  "content": ["id_dynamic_auto_repeat_enable", 14, 1]
               },
               {   
-                  "showIf": "{id_dynamic_quick_repeat_enable} != 0",
+                  "showIf": "{id_dynamic_auto_repeat_enable} != 0",
                   "label": "\u5904\u4e8e\u5c42\u4f4d0\u65f6\u6309\u952e\u8fde\u53d1\u662f\u5426\u5f00\u542f",
                   "type": "toggle",
-                  "content": ["id_dynamic_quick_repeat_layer_enable[0]", 14, 2, 0]
+                  "content": ["id_dynamic_auto_repeat_layer_enable[0]", 14, 2, 0]
               },
               {   
-                  "showIf": "{id_dynamic_quick_repeat_enable} != 0",
+                  "showIf": "{id_dynamic_auto_repeat_enable} != 0",
                   "label": "\u5904\u4e8e\u5c42\u4f4d1\u65f6\u6309\u952e\u8fde\u53d1\u662f\u5426\u5f00\u542f",
                   "type": "toggle",
-                  "content": ["id_dynamic_quick_repeat_layer_enable[1]", 14, 2, 1]
+                  "content": ["id_dynamic_auto_repeat_layer_enable[1]", 14, 2, 1]
               },
               {   
-                  "showIf": "{id_dynamic_quick_repeat_enable} != 0",
+                  "showIf": "{id_dynamic_auto_repeat_enable} != 0",
                   "label": "\u5904\u4e8e\u5c42\u4f4d2\u65f6\u6309\u952e\u8fde\u53d1\u662f\u5426\u5f00\u542f",
                   "type": "toggle",
-                  "content": ["id_dynamic_quick_repeat_layer_enable[2]", 14, 2, 2]
+                  "content": ["id_dynamic_auto_repeat_layer_enable[2]", 14, 2, 2]
               },
               {   
-                  "showIf": "{id_dynamic_quick_repeat_enable} != 0",
+                  "showIf": "{id_dynamic_auto_repeat_enable} != 0",
                   "label": "\u5904\u4e8e\u5c42\u4f4d3\u65f6\u6309\u952e\u8fde\u53d1\u662f\u5426\u5f00\u542f",
                   "type": "toggle",
-                  "content": ["id_dynamic_quick_repeat_layer_enable[3]", 14, 2, 3]
+                  "content": ["id_dynamic_auto_repeat_layer_enable[3]", 14, 2, 3]
               },
               {   
-                  "showIf": "{id_dynamic_quick_repeat_enable} != 0",
+                  "showIf": "{id_dynamic_auto_repeat_enable} != 0",
                   "label": "\u5904\u4e8e\u5c42\u4f4d4\u65f6\u6309\u952e\u8fde\u53d1\u662f\u5426\u5f00\u542f",
                   "type": "toggle",
-                  "content": ["id_dynamic_quick_repeat_layer_enable[4]", 14, 2, 4]
+                  "content": ["id_dynamic_auto_repeat_layer_enable[4]", 14, 2, 4]
               },
               {   
-                  "showIf": "{id_dynamic_quick_repeat_enable} != 0",
+                  "showIf": "{id_dynamic_auto_repeat_enable} != 0",
                   "label": "\u5904\u4e8e\u5c42\u4f4d5\u65f6\u6309\u952e\u8fde\u53d1\u662f\u5426\u5f00\u542f",
                   "type": "toggle",
-                  "content": ["id_dynamic_quick_repeat_layer_enable[5]", 14, 2, 5]
+                  "content": ["id_dynamic_auto_repeat_layer_enable[5]", 14, 2, 5]
               }
           ]
       },
@@ -5198,29 +5384,29 @@
               {
                   "label": "\u8fde\u53d1\u952e",
                   "type": "keycode",
-                  "content": ["id_dynamic_quick_repeat_keycode[0]", 14, 4, 0]
+                  "content": ["id_dynamic_auto_repeat_keycode[0]", 14, 4, 0]
               },
               {
                   "label": "\u8fde\u53d1\u952e\u4fdd\u6301\u65f6\u95f4\u4e0b\u9650",
-                  "content": ["id_dynamic_quick_repeat_hold_delay_0[0]", 14, 5, 0],
+                  "content": ["id_dynamic_auto_repeat_hold_delay_0[0]", 14, 5, 0],
                   "type": "range",
                   "options": [1, 255]
               },
               {
                   "label": "\u8fde\u53d1\u952e\u4fdd\u6301\u65f6\u95f4\u4e0a\u9650",
-                  "content": ["id_dynamic_quick_repeat_hold_delay_1[0]", 14, 6, 0],
+                  "content": ["id_dynamic_auto_repeat_hold_delay_1[0]", 14, 6, 0],
                   "type": "range",
                   "options": [1, 255]
               },
               {
                   "label": "\u8fde\u53d1\u952e\u95f4\u9694\u65f6\u95f4\u4e0b\u9650",
-                  "content": ["id_dynamic_quick_repeat_hold_delay_0[0]", 14, 7, 0],
+                  "content": ["id_dynamic_auto_repeat_hold_delay_0[0]", 14, 7, 0],
                   "type": "range",
                   "options": [1, 255]
               },
               {
                   "label": "\u8fde\u53d1\u952e\u95f4\u9694\u65f6\u95f4\u4e0a\u9650",
-                  "content": ["id_dynamic_quick_repeat_hold_delay_1[0]", 14, 8, 0],
+                  "content": ["id_dynamic_auto_repeat_hold_delay_1[0]", 14, 8, 0],
                   "type": "range",
                   "options": [1, 255]
                   
@@ -5228,7 +5414,7 @@
               {
                   "label": "\u6a21\u5f0f",
                   "type": "dropdown",
-                  "content": ["id_dynamic_quick_repeat_delay[0]", 14, 9, 0],
+                  "content": ["id_dynamic_auto_repeat_delay[0]", 14, 9, 0],
                   "options": [
                       ["\u5173\u95ed", 0],
                       ["\u6309\u4f4f\u8fde\u53d1\uff0c\u677e\u5f00\u505c\u6b62", 1],
@@ -5247,29 +5433,29 @@
               {
                   "label": "\u8fde\u53d1\u952e",
                   "type": "keycode",
-                  "content": ["id_dynamic_quick_repeat_keycode[1]", 14, 4, 1]
+                  "content": ["id_dynamic_auto_repeat_keycode[1]", 14, 4, 1]
               },
               {
                   "label": "\u8fde\u53d1\u952e\u4fdd\u6301\u65f6\u95f4\u4e0b\u9650",
-                  "content": ["id_dynamic_quick_repeat_hold_delay_0[1]", 14, 5, 1],
+                  "content": ["id_dynamic_auto_repeat_hold_delay_0[1]", 14, 5, 1],
                   "type": "range",
                   "options": [1, 255]
               },
               {
                   "label": "\u8fde\u53d1\u952e\u4fdd\u6301\u65f6\u95f4\u4e0a\u9650",
-                  "content": ["id_dynamic_quick_repeat_hold_delay_1[1]", 14, 6, 1],
+                  "content": ["id_dynamic_auto_repeat_hold_delay_1[1]", 14, 6, 1],
                   "type": "range",
                   "options": [1, 255]
               },
               {
                   "label": "\u8fde\u53d1\u952e\u95f4\u9694\u65f6\u95f4\u4e0b\u9650",
-                  "content": ["id_dynamic_quick_repeat_hold_delay_0[1]", 14, 7, 1],
+                  "content": ["id_dynamic_auto_repeat_hold_delay_0[1]", 14, 7, 1],
                   "type": "range",
                   "options": [1, 255]
               },
               {
                   "label": "\u8fde\u53d1\u952e\u95f4\u9694\u65f6\u95f4\u4e0a\u9650",
-                  "content": ["id_dynamic_quick_repeat_hold_delay_1[1]", 14, 8, 1],
+                  "content": ["id_dynamic_auto_repeat_hold_delay_1[1]", 14, 8, 1],
                   "type": "range",
                   "options": [1, 255]
                   
@@ -5277,7 +5463,7 @@
               {
                   "label": "\u6a21\u5f0f",
                   "type": "dropdown",
-                  "content": ["id_dynamic_quick_repeat_delay[1]", 14, 9, 1],
+                  "content": ["id_dynamic_auto_repeat_delay[1]", 14, 9, 1],
                   "options": [
                       ["\u5173\u95ed", 0],
                       ["\u6309\u4f4f\u8fde\u53d1\uff0c\u677e\u5f00\u505c\u6b62", 1],
@@ -5295,36 +5481,36 @@
           {
             "label": "\u8fde\u53d1\u952e",
             "type": "keycode",
-            "content": ["id_dynamic_quick_repeat_keycode[2]", 14, 4, 2]
+            "content": ["id_dynamic_auto_repeat_keycode[2]", 14, 4, 2]
           },
           {
             "label": "\u8fde\u53d1\u952e\u4fdd\u6301\u65f6\u95f4\u4e0b\u9650",
-            "content": ["id_dynamic_quick_repeat_hold_delay_0[2]", 14, 5, 2],
+            "content": ["id_dynamic_auto_repeat_hold_delay_0[2]", 14, 5, 2],
             "type": "range",
             "options": [1, 255]
           },
           {
             "label": "\u8fde\u53d1\u952e\u4fdd\u6301\u65f6\u95f4\u4e0a\u9650",
-            "content": ["id_dynamic_quick_repeat_hold_delay_1[2]", 14, 6, 2],
+            "content": ["id_dynamic_auto_repeat_hold_delay_1[2]", 14, 6, 2],
             "type": "range",
             "options": [1, 255]
           },
           {
             "label": "\u8fde\u53d1\u952e\u95f4\u9694\u65f6\u95f4\u4e0b\u9650",
-            "content": ["id_dynamic_quick_repeat_hold_delay_0[2]", 14, 7, 2],
+            "content": ["id_dynamic_auto_repeat_hold_delay_0[2]", 14, 7, 2],
             "type": "range",
             "options": [1, 255]
           },
           {
             "label": "\u8fde\u53d1\u952e\u95f4\u9694\u65f6\u95f4\u4e0a\u9650",
-            "content": ["id_dynamic_quick_repeat_hold_delay_1[2]", 14, 8, 2],
+            "content": ["id_dynamic_auto_repeat_hold_delay_1[2]", 14, 8, 2],
             "type": "range",
             "options": [1, 255]
           },
           {
             "label": "\u6a21\u5f0f",
             "type": "dropdown",
-            "content": ["id_dynamic_quick_repeat_delay[2]", 14, 9, 2],
+            "content": ["id_dynamic_auto_repeat_delay[2]", 14, 9, 2],
             "options": [
               ["\u5173\u95ed", 0],
               ["\u6309\u4f4f\u8fde\u53d1\uff0c\u677e\u5f00\u505c\u6b62", 1],
@@ -5342,36 +5528,36 @@
           {
             "label": "\u8fde\u53d1\u952e",
             "type": "keycode",
-            "content": ["id_dynamic_quick_repeat_keycode[3]", 14, 4, 3]
+            "content": ["id_dynamic_auto_repeat_keycode[3]", 14, 4, 3]
           },
           {
             "label": "\u8fde\u53d1\u952e\u4fdd\u6301\u65f6\u95f4\u4e0b\u9650",
-            "content": ["id_dynamic_quick_repeat_hold_delay_0[3]", 14, 5, 3],
+            "content": ["id_dynamic_auto_repeat_hold_delay_0[3]", 14, 5, 3],
             "type": "range",
             "options": [1, 255]
           },
           {
             "label": "\u8fde\u53d1\u952e\u4fdd\u6301\u65f6\u95f4\u4e0a\u9650",
-            "content": ["id_dynamic_quick_repeat_hold_delay_1[3]", 14, 6, 3],
+            "content": ["id_dynamic_auto_repeat_hold_delay_1[3]", 14, 6, 3],
             "type": "range",
             "options": [1, 255]
           },
           {
             "label": "\u8fde\u53d1\u952e\u95f4\u9694\u65f6\u95f4\u4e0b\u9650",
-            "content": ["id_dynamic_quick_repeat_hold_delay_0[3]", 14, 7, 3],
+            "content": ["id_dynamic_auto_repeat_hold_delay_0[3]", 14, 7, 3],
             "type": "range",
             "options": [1, 255]
           },
           {
             "label": "\u8fde\u53d1\u952e\u95f4\u9694\u65f6\u95f4\u4e0a\u9650",
-            "content": ["id_dynamic_quick_repeat_hold_delay_1[3]", 14, 8, 3],
+            "content": ["id_dynamic_auto_repeat_hold_delay_1[3]", 14, 8, 3],
             "type": "range",
             "options": [1, 255]
           },
           {
             "label": "\u6a21\u5f0f",
             "type": "dropdown",
-            "content": ["id_dynamic_quick_repeat_delay[3]", 14, 9, 3],
+            "content": ["id_dynamic_auto_repeat_delay[3]", 14, 9, 3],
             "options": [
               ["\u5173\u95ed", 0],
               ["\u6309\u4f4f\u8fde\u53d1\uff0c\u677e\u5f00\u505c\u6b62", 1],
@@ -5389,36 +5575,36 @@
           {
             "label": "\u8fde\u53d1\u952e",
             "type": "keycode",
-            "content": ["id_dynamic_quick_repeat_keycode[4]", 14, 4, 4]
+            "content": ["id_dynamic_auto_repeat_keycode[4]", 14, 4, 4]
           },
           {
             "label": "\u8fde\u53d1\u952e\u4fdd\u6301\u65f6\u95f4\u4e0b\u9650",
-            "content": ["id_dynamic_quick_repeat_hold_delay_0[4]", 14, 5, 4],
+            "content": ["id_dynamic_auto_repeat_hold_delay_0[4]", 14, 5, 4],
             "type": "range",
             "options": [1, 255]
           },
           {
             "label": "\u8fde\u53d1\u952e\u4fdd\u6301\u65f6\u95f4\u4e0a\u9650",
-            "content": ["id_dynamic_quick_repeat_hold_delay_1[4]", 14, 6, 4],
+            "content": ["id_dynamic_auto_repeat_hold_delay_1[4]", 14, 6, 4],
             "type": "range",
             "options": [1, 255]
           },
           {
             "label": "\u8fde\u53d1\u952e\u95f4\u9694\u65f6\u95f4\u4e0b\u9650",
-            "content": ["id_dynamic_quick_repeat_hold_delay_0[4]", 14, 7, 4],
+            "content": ["id_dynamic_auto_repeat_hold_delay_0[4]", 14, 7, 4],
             "type": "range",
             "options": [1, 255]
           },
           {
             "label": "\u8fde\u53d1\u952e\u95f4\u9694\u65f6\u95f4\u4e0a\u9650",
-            "content": ["id_dynamic_quick_repeat_hold_delay_1[4]", 14, 8, 4],
+            "content": ["id_dynamic_auto_repeat_hold_delay_1[4]", 14, 8, 4],
             "type": "range",
             "options": [1, 255]
           },
           {
             "label": "\u6a21\u5f0f",
             "type": "dropdown",
-            "content": ["id_dynamic_quick_repeat_delay[4]", 14, 9, 4],
+            "content": ["id_dynamic_auto_repeat_delay[4]", 14, 9, 4],
             "options": [
               ["\u5173\u95ed", 0],
               ["\u6309\u4f4f\u8fde\u53d1\uff0c\u677e\u5f00\u505c\u6b62", 1],
