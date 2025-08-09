@@ -1,0 +1,250 @@
+{
+	"name": "KH9NG001alice",
+	"vendorId": "0x36B0",
+	"productId": "0x3078",
+	"keycodes": ["qmk_lighting"],
+	"menus":
+	[
+		{
+			"label": "Lighting",
+			"content":
+			[
+				{
+					"label": "logo",
+					"content":
+					[
+						{
+							"showIf": "{id_qmk_rgblight_effect} != 0",
+							"label": "Brightness",
+							"type": "range",
+							"options": [0, 180],
+							"content": ["id_qmk_rgblight_brightness", 2, 1]
+						},
+						{
+							"label": "Effect",
+							"type": "dropdown",
+							"content": ["id_qmk_rgblight_effect", 2, 2],
+							"options":
+							[
+								[ "none", 0 ],
+								[ "wave", 1 ],
+								[ "fixed wave", 2 ],
+								[ "spectrum", 3 ],
+								[ "breathe", 4 ],
+								[ "light", 5 ],
+								[ "shutdown",6 ]
+							]
+						},
+						{
+							"showIf": "{id_qmk_rgblight_effect} != 0",
+							"label": "Effect Speed",
+							"type": "range",
+							"options": [0, 4],
+							"content": ["id_qmk_rgblight_effect_speed", 2, 3]
+						},
+						{
+							"showIf": "{id_qmk_rgblight_effect} != 0 && {id_qmk_rgblight_effect} != 1 && {id_qmk_rgblight_effect} != 3 && {id_qmk_rgblight_effect} != 6",
+							"label": "Color",
+							"type": "color",
+							"content": ["id_qmk_rgblight_color", 2, 4]
+						}
+					]
+				},
+                {
+					"label": "side",
+					"content":
+					[
+						{
+							"showIf": "{id_qmk_audio_effect} != 0",
+							"label": "Brightness",
+							"type": "range",
+							"options": [0, 180],
+							"content": ["id_qmk_audio_brightness", 4, 1]
+						},
+						{
+							"label": "Effect",
+							"type": "dropdown",
+							"content": ["id_qmk_audio_effect", 4, 2],
+							"options":
+							[
+								[ "none", 0 ],
+								[ "wave", 1 ],
+								[ "spectrum", 2 ],
+								[ "breathe", 3 ],
+								[ "light_red", 4 ],
+								[ "light_Green", 5 ],
+								[ "light_Blue", 6 ],
+								[ "light_Yellowd", 7 ],
+								[ "light_Purple", 8 ],
+								[ "light_Cyan", 9 ],
+								[ "light_White", 10 ],
+								[ "shutdown",11 ]
+							]
+						},
+						{
+							"showIf": "{id_qmk_audio_effect} != 0",
+							"label": "Effect Speed",
+							"type": "range",
+							"options": [0, 4],
+							"content": ["id_qmk_audio_effect_speed", 4, 3]
+						},
+						{
+							"showIf": "{id_qmk_audio_effect} != 0 && {id_qmk_audio_effect} != 1 && {id_qmk_audio_effect} != 3 && {id_qmk_audio_effect} != 6",
+							"label": "Color",
+							"type": "color",
+							"content": ["id_qmk_audio_color", 4, 4]
+						}
+					]
+				}
+			]
+		}
+	],
+	"customKeycodes": [
+		{"name": "2.4G",     "title": "Set to 2.4G working mode",                "shortName": "MD_24G"  },
+		{"name": "BLE1",     "title": "Set to Bluetooth Channel 1 working mode", "shortName": "MD_BLE1" },
+		{"name": "BLE2",     "title": "Set to Bluetooth Channel 2 working mode", "shortName": "MD_BLE2" },
+		{"name": "BLE3",     "title": "Set to Bluetooth Channel 3 working mode", "shortName": "MD_BLE3" },
+		{"name": "USB",	     "title": "Set to USB working mode",                 "shortName": "MD_USB"  },
+		{"name": "BAT",      "title": "Querying Battery Status",                 "shortName": "QK_BAT"  },
+		{"name": "WLO",      "title": "Lock WIN",                                "shortName": "QK_WLO"  },
+		{"name": "SIX_N",    "title": "Full-key six-key switch",                 "shortName": "SIX_N"   },
+        {"name": "MW_CH",    "title": "MAC/Windows system change",               "shortName": "MW_CH"   },
+        {"name": "RTOG",     "title": "Toggle led lighting on or off",           "shortName": "RGB_RTOG"},
+        {"name": "U_EE_CLR", "title": "Customize the reset button",              "shortName": "U_EE_CLR"},
+        {"name": "IOS_SIRI", "title": "Long press to activate Siri",             "shortName": "IOS_SIRI"},
+		{"name": "QM_DEB",   "title": "Toggle the number of de-chattering",      "shortName": "QM_DEB"  },
+		{"name": "LG_TOG",   "title": "Toggle logo lighting on or off",          "shortName": "LG_TOG"  },
+		{"name": "LG_MO",    "title": "Cycle through modes",                     "shortName": "LG_MOD"  },
+		{"name": "LG_RM",    "title": "Cycle through modes in reverse",          "shortName": "LG_RMOD" },
+		{"name": "LG_HUI",   "title": "logo Increase hue",                       "shortName": "LG_HUI"  },
+		{"name": "LG_HUD",   "title": "logo Decrease hue",                       "shortName": "LG_HUD"  },
+		{"name": "LG_SAI",   "title": "logo Increase saturation",                "shortName": "LG_SAI"  },
+		{"name": "LG_SAD",   "title": "logo Decrease saturation",                "shortName": "LG_SAD"  },
+		{"name": "LG_VAI",   "title": "logo Increase value (brightness)",        "shortName": "LG_VAI"  },
+		{"name": "LG_VAD",   "title": "logo Decrease value (brightness)",        "shortName": "LG_VAD"  },
+		{"name": "LG_SPI",   "title": "logo Increase effect speed",              "shortName": "LG_SPI"  },
+		{"name": "LG_SPD",   "title": "logo Decrease effect speed",              "shortName": "LG_SPD"  },
+        {"name": "SI_TOG",   "title": "Toggle side lighting on or off",          "shortName": "SI_TOG"  },
+		{"name": "SI_MO",    "title": "side Cycle through modes",                "shortName": "SI_MOD"  },
+		{"name": "SI_RM",    "title": "side Cycle through modes in reverse",     "shortName": "SI_RMOD" },
+		{"name": "SI_HUI",   "title": "side Increase hue",                       "shortName": "SI_HUI"  },
+		{"name": "SI_HUD",   "title": "side Decrease hue",                       "shortName": "SI_HUD"  },
+		{"name": "SI_SAI",   "title": "side Increase saturation",                "shortName": "SI_SAI"  },
+		{"name": "SI_SAD",   "title": "side Decrease saturation",                "shortName": "SI_SAD"  },
+		{"name": "SI_VAI",   "title": "side Increase value (brightness)",        "shortName": "SI_VAI"  },
+		{"name": "SI_VAD",   "title": "side Decrease value (brightness)",        "shortName": "SI_VAD"  },
+		{"name": "SI_SPI",   "title": "side Increase effect speed",              "shortName": "SI_SPI"  },
+		{"name": "SI_SPD",   "title": "side Decrease effect speed",              "shortName": "SI_SPD"  }
+	],
+	"matrix": { "rows": 6, "cols": 16 },
+	"layouts": {
+        "labels": [
+            "Split Caps Lock"
+		],
+		"keymap": [
+			[
+				{ "c":"#777777" },
+				{"r":0,		"rx":0.00,		"ry":-0.10},			"0,0",	{"x":0.00},
+				{ "c":"#cccccc" },
+				{"r":0,		"rx":0.00,		"ry":0.00},				"1,1",	{"x":0.00},
+				{"r":0,		"rx":0.00,		"ry":0.00},				"1,2",	{"x":0.00},
+				{"r":0,		"rx":0.00,		"ry":-0.10},			"1,3",	{"x":0.30},
+				{"r":10,	"rx":0.00,		"ry":-0.7},			    "1,4",	{"x":0.00},
+				{"r":10,	"rx":0.00,		"ry":-0.7},			    "1,5",	{"x":0.00},
+				{"r":10,	"rx":0.00,		"ry":-0.7},			    "1,6",	{"x":0.00},
+				{"r":10,	"rx":0.00,		"ry":-0.7},			    "1,7",	{"x":0.40},
+
+				{"r":-10,	"rx":0.00,		"ry":2.10},				"1,8",	{"x":0.00},
+				{"r":-10,	"rx":0.00,		"ry":2.10},				"1,9",	{"x":0.00},
+				{"r":-10,	"rx":0.00,		"ry":2.10},				"1,10",	{"x":0.00},
+				{"r":-10,	"rx":0.00,		"ry":2.10},				"1,11",	{"x":0.10},
+				{"r":0,		"rx":0.00,		"ry":0.00},				"1,12",	{"x":0.00},
+				{"r":0,		"rx":0.00,		"ry":0.00},				"1,13",	{"x":0.00},
+				{ "c":"#aaaaaa" },
+				{"r":0,		"rx":0.00,		"ry":0.00,	"w": 2.0},	"1,14", {"x":0.00}
+			],
+			[
+				{ "c":"#aaaaaa" },	{"x":-0.25},
+				{"r":0,		"rx":0.00,		"ry":1.00,	"w": 1.5},	"2,0",	{"x":0.00},
+				{"r":0,		"rx":0.00,		"ry":1.00,	"w": 1.0},	"2,1",	{"x":0.00},
+				{ "c":"#cccccc" },
+				{"r":0,		"rx":0.00,		"ry":1.00},				"2,2",	{"x":0.30},
+				{"r":10,	"rx":0.00,		"ry":0.35},				"2,3",	{"x":0.00},
+				{"r":10,	"rx":0.00,		"ry":0.35},				"2,4",	{"x":0.00},
+				{"r":10,	"rx":0.00,		"ry":0.35},				"2,5",	{"x":0.00},
+				{"r":10,	"rx":0.00,		"ry":0.35},				"2,6",	{"x":0.60},
+
+				{"r":-10,	"rx":0.00,		"ry":3.10},				"2,7",	{"x":0.00},
+				{"r":-10,	"rx":0.00,		"ry":3.10},				"2,8",	{"x":0.00},
+				{"r":-10,	"rx":0.00,		"ry":3.10},				"2,9",	{"x":0.00},
+				{"r":-10,	"rx":0.00,		"ry":3.10},				"2,10",	{"x":0.00},
+				{"r":0,		"rx":0.00,		"ry":1.00},				"2,11",	{"x":0.00},
+				{"r":0,		"rx":0.00,		"ry":1.00},				"2,12",	{"x":0.00},
+				{"r":0,		"rx":0.00,		"ry":1.00},				"2,13",	{"x":0.00},
+				{ "c":"#aaaaaa" },
+				{"r":0,		"rx":0.00,		"ry":1.00,	"w": 1.5},	"2,14", {"x":0.10}
+			],
+			[
+				{ "c":"#aaaaaa" },	{"x":-0.50},
+				{"r":0,		"rx":0.25,		"ry":2.00,	"w": 1.0 }, "3,0",	{"x":0.25},
+				{"r":0,		"rx":0.00,		"ry":2.00,  "w": 1.75},	"5,3\n\n\n0,0",	{"x":-1.75},
+				{"r":0,		"rx":0.00,		"ry":2.00,  "w": 1.50},	"3,1\n\n\n0,1",	{"x":0.25},
+				{ "c":"#cccccc" },
+				{"r":0,		"rx":0.00,		"ry":2.00},				"3,2",	{"x":0.30},
+				{"r":10,	"rx":0.00,		"ry":1.38},				"3,3",	{"x":0.00},
+				{"r":10,	"rx":0.00,		"ry":1.38},				"3,4",	{"x":0.00},
+				{"r":10,	"rx":0.00,		"ry":1.38},				"3,5",	{"x":0.00},
+				{"r":10,	"rx":0.00,		"ry":1.38},				"3,6",	{"x":0.90},
+
+				{"r":-10,	"rx":0.00,		"ry":4.12},				"3,7",	{"x":0.00},
+				{"r":-10,	"rx":0.00,		"ry":4.12},				"3,8",	{"x":0.00},
+				{"r":-10,	"rx":0.00,		"ry":4.12},				"3,9",	{"x":0.00},
+				{"r":-10,	"rx":0.00,		"ry":4.12},				"3,10",	{"x":0.00},
+				{"r":0,		"rx":0.00,		"ry":2.00},				"3,11",	{"x":0.00},
+				{"r":0,		"rx":0.00,		"ry":2.00},				"3,13",	{"x":0.00},
+
+				{ "c":"#777777" },
+				{"r":0,		"rx":0.00,		"ry":2.00,	"w": 2.25},	"3,14",	{"x":0.15}
+
+			],
+			[
+				{ "c":"#aaaaaa" },	{"x":-0.75},
+				{"r":0,		"rx":1.00,		"ry":3.00,	"w": 2.25},	"4,0",	{"x":1.00},
+				{ "c":"#cccccc" },
+				{"r":0,		"rx":0.00,		"ry":3.00},				"4,2",	{"x":0.30},
+				{"r":10,	"rx":0.00,		"ry":2.40},				"4,3",	{"x":0.00},
+				{"r":10,	"rx":0.00,		"ry":2.40},				"4,4",	{"x":0.00},
+				{"r":10,	"rx":0.00,		"ry":2.40},				"4,5",	{"x":0.00},
+				{"r":10,	"rx":0.00,		"ry":2.40},				"4,6",	{"x":0.40},
+
+				{"r":-10,	"rx":0.00,		"ry":5.15},				"4,7",	{"x":0.00},
+				{"r":-10,	"rx":0.00,		"ry":5.15},				"4,8",	{"x":0.00},
+				{"r":-10,	"rx":0.00,		"ry":5.15},				"4,9",	{"x":0.00},
+				{"r":-10,	"rx":0.00,		"ry":5.15},				"4,10",	{"x":0.00},
+				{"r":0,		"rx":0.00,		"ry":3.02},				"4,11",	{"x":0.00},
+				{"r":0,		"rx":0.00,		"ry":3.02},				"4,13",	{"x":0.00},
+				{ "c":"#777777" },
+				{"r":0,		"rx":0.00,		"ry":3.02,	"w": 1.0},	"4,14",	{"x":0.00},
+                { "c":"#aaaaaa" },
+				{"r":0,		"rx":0.00,		"ry":3.02,  "w": 1.75},	"3,15",	{"x":0.00}
+			],
+			[
+				{ "c":"#aaaaaa" },	{"x":-0.75},
+				{"r":0,		"rx":1.00,		"ry":4.00,	"w": 1.25},	"5,0",	{"x":1.00},
+				{"r":0,		"rx":0.00,		"ry":4.00,	"w": 1.25},	"5,1",	{"x":1.25},
+				{"r":10,	"rx":0.00,		"ry":3.45,	"w": 1.25}, "5,2",	{"x":0.00},
+				{ "c":"#cccccc" },
+				{"r":10,	"rx":0.00,		"ry":3.45,	"w": 2.25},	"5,5",	{"x":0.75},
+
+				{"r":-10,	"rx":0.00,		"ry":6.20,	"w": 2.75},	"5,9",  {"x":0.00},
+				{ "c":"#aaaaaa" },
+				{"r":-10,	"rx":0.00,		"ry":6.20,	"w": 1.25},	"5,10", {"x":2.60},
+
+				{ "c":"#777777" },
+				{"r":0,		"rx":-1.65,		"ry":4.00},				"5,13", {"x":-1.65},
+				{"r":0,		"rx":0.00,		"ry":4.00},				"5,14", {"x":0.00},
+				{"r":0,		"rx":0.00,		"ry":4.00},				"5,15", {"x":0.00}
+			]
+		]
+	}
+}
