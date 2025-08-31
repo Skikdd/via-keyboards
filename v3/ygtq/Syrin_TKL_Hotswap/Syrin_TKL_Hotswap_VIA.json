@@ -1,5 +1,5 @@
 {
-  "name": "Syran TKL Hotswap",
+  "name": "Syrin TKL Hotswap",
   "vendorId": "0x0314",
   "productId": "0xAA37",
   "matrix": {
@@ -79,11 +79,19 @@
           ]
         }
       ],
+        "customKeycodes": [
+    {
+      "name": "WIN_BASE",
+      "title": "Switch To WIN MODE",
+      "shortName": "WIN_BASE"
+    },
+    {
+      "name": "MAC_BASE",
+      "title": "Switch To MAC MODE",
+      "shortName": "MAC_BASE"
+    }
+  ],
   "layouts": {
-    "presets": {"default": [0]},
-    "labels": [
-      "\u5206\u88c2\u5de6\u0053\u0068\u0069\u0066\u0074"
-    ],
     "keymap": [
       [
         "0,0",
@@ -194,7 +202,7 @@
         {
           "w": 2.25
         },
-        "4,0\n\n\n0,0",
+        "4,0",
         "4,2",
         "4,3",
         "4,4",
@@ -212,12 +220,7 @@
         {
           "x": 1.25
         },
-        "4,15",
-        {
-          "w": 1.25
-        },
-        "4,0\n\n\n0,1",
-        "4,1\n\n\n0,1"
+        "4,15"
       ],
       [
         {
