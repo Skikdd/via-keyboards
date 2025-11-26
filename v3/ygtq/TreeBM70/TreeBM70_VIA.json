@@ -3,6 +3,18 @@
   "vendorId": "0x0314",
   "productId": "0xAA56",
   "matrix": { "rows": 5, "cols": 17 },
+  "customKeycodes": [
+    {
+      "name": "WIN_BASE",
+      "title": "Switch To Windows Mode / \u5207\u6362\u5230\u0057\u0069\u006e\u0064\u006f\u0077\u0073\u6a21\u5f0f",
+      "shortName": "WIN_BASE"
+    },
+    {
+      "name": "MAC_BASE",
+      "title": "Switch To Mac Mode / \u5207\u6362\u5230\u004d\u0061\u0063\u6a21\u5f0f",
+      "shortName": "MAC_BASE"
+    }
+  ],
   "layouts": {
     "labels": [
                 ["R4", "6.25U", "7U"],
