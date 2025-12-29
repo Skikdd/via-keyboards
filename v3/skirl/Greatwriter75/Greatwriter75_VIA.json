@@ -117,33 +117,43 @@
   "customKeycodes": [
     {
       "name": "BT DEV1",
-      "title": "BT Device 1",
-      "shortName": "DEV1"
+      "title": "Switch To BT Device 1",
+      "shortName": "BT1"
     },
     {
       "name": "BT DEV2",
-      "title": "BT Device 2",
-      "shortName": "DEV2"
+      "title": "Switch To BT Device 2",
+      "shortName": "BT2"
     },
     {
       "name": "BT DEV3",
-      "title": "BT Device 3",
-      "shortName": "DEV3"
+      "title": "Switch To BT Device 3",
+      "shortName": "BT3"
     },
     {
       "name": "2.4G",
-      "title": "2.4G",
-      "shortName": "DEV 2.4G"
+      "title": "Switch To 2.4G Mode",
+      "shortName": "2.4G"
     },
     {
       "name": "USB",
-      "title": "USB",
-      "shortName": "DEV USB"
+      "title": "Switch To USB Mode",
+      "shortName": "USB"
     },
     {
       "name": "BAT RGB",
-      "title": "BAT RGB",
+      "title": "Display Battery level IN NUM 1 2 3 4 5 6 7 8 9 0",
       "shortName": "BAT RGB"
+    },
+    {
+      "name": "WIN_BASE",
+      "title": "Switch To WIN Mode",
+      "shortName": "WIN BASE"
+    },
+    {
+      "name": "MAC_BASE",
+      "title": "Switch To MAC Mode",
+      "shortName": "MAC BASE"
     }
   ],
   "layouts": {
