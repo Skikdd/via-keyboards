@@ -17,7 +17,7 @@
               "type": "range",
               "options": [
                 0,
-                255
+                150
               ],
               "content": [
                 "id_qmk_rgb_matrix_brightness",
@@ -130,9 +130,14 @@
       "shortName": "BAT Text"
     },
     {
-      "name": "WIN LOCK",
-      "title": "WIN LOCK",
-      "shortName": "WIN LOCK"
+      "name": "WIN_BASE",
+      "title": "WIN BASE",
+      "shortName": "WIN BASE"
+    },
+    {
+      "name": "MAC_BASE",
+      "title": "MAC BASE",
+      "shortName": "MAC BASE"
     }
   ],
   "layouts": {
