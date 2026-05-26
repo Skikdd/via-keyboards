@@ -1,5 +1,5 @@
 {
-	"name": "TBM68",
+	"name": "Keyi68 v1.0",
 	"vendorId": "0x36B0",
 	"productId": "0x317C",
 	"keycodes": ["qmk_lighting"],
