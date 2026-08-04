@@ -24,7 +24,7 @@
 	"matrix": { "rows": 6, "cols": 16 },
 	"layouts": {
 		"labels": [
-            "ISO L_Shift"
+            "\u5de6\u0053\u0068\u0069\u0066\u0074\u5207\u6362\uff0c\u9ed8\u8ba4\u4fee\u6539\u7684\u9636\u68af\u4f4d\u7f6e\u7684\u6309\u952e\uff0c\u6253\u5f00\u9009\u9879\u540e\u624d\u80fd\u4fee\u6539\u6b63\u5e38\u4f4d\u7f6e\u7684\u952e\u503c"
 		],
 		"keymap": [
 			[
