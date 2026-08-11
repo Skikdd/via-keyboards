@@ -1,7 +1,7 @@
 {
 	"name": "creme75",
 	"vendorId": "0x36B0",
-	"productId": "0x309D",
+	"productId": "0x3185",
 	"keycodes": ["qmk_lighting"],
 	"menus":
 	[
@@ -92,21 +92,15 @@
 		}
 	],
 	"customKeycodes": [
-		{"name": "2.4G",     "title": "Set to 2.4G working mode",                "shortName": "MD_24G"  },
-		{"name": "BLE1",     "title": "Set to Bluetooth Channel 1 working mode", "shortName": "MD_BLE1" },
-		{"name": "BLE2",     "title": "Set to Bluetooth Channel 2 working mode", "shortName": "MD_BLE2" },
-		{"name": "BLE3",     "title": "Set to Bluetooth Channel 3 working mode", "shortName": "MD_BLE3" },
-		{"name": "USB",	     "title": "Set to USB working mode",                 "shortName": "MD_USB"  },
-		{"name": "BAT",      "title": "Querying Battery Status",                 "shortName": "QK_BAT"  },
-		{"name": "WLO",      "title": "Lock WIN",                                "shortName": "QK_WLO"  },
-		{"name": "SIX_N",    "title": "Full-key six-key switch",                 "shortName": "SIX_N"   },
-		{"name": "MW_CH",    "title": "IOS Windows System switch",               "shortName": "MW_CH"   },
-		{"name": "FN_LCTRL", "title": "Swap the F area and the number area",     "shortName": "FN_LCTRL"},
-		{"name": "RTOG",     "title": "Toggle led lighting on or off",           "shortName": "RGB_RTOG"},
-		{"name": "U_EE_CLR", "title": "Customize the reset button",              "shortName": "U_EE_CLR"},
-		{"name": "KEY_DEB",  "title": "Toggle the number of de-chattering",      "shortName": "KEY_DEB" },
-        {"name": "KbPrSlp",  "title": "Keyboard primary sleep",                  "shortName": "KbPrSlp" },
-		{"name": "KbdSecS",  "title": "Keyboard secondary sleep",                "shortName": "KbdSecS" }
+		{"name": "WLO",      "title": "Lock WIN",                                "shortName": "QK_WLO"   },
+		{"name": "SIX_N",    "title": "Full-key six-key switch",                 "shortName": "SIX_N"    },
+		{"name": "MAC_WIN",  "title": "MAC-Mode WIN-Mode switch",                "shortName": "MW_CH"    },
+		{"name": "CHANGE",   "title": "Swap F area and number area",             "shortName": "QK_CHG"   },
+		{"name": "RTOG",     "title": "Toggle led lighting on or off",           "shortName": "RGB_RTOG" },
+		{"name": "U_EE_CLR", "title": "Customize the reset button",              "shortName": "U_EE_CLR" },
+        {"name": "QK_DEB",   "title": "Number of times that the key shakes off", "shortName": "KEY_DEB"  },
+        {"name": "TEST",     "title": "Test Keyboard Colour",                    "shortName": "TEST"     },
+        {"name": "IOS_SIRI", "title": "IOS System Call Siri",                    "shortName": "IOS_SIRI" }
 	],
 	"matrix": { "rows": 6, "cols": 16 },
     "layouts": {
@@ -150,8 +144,8 @@
 				{ "w":1.0,  "h":1.0,  "x":0.0 },  "1,10",
 				{ "w":1.0,  "h":1.0,  "x":0.0 },  "1,11",
 				{ "w":1.0,  "h":1.0,  "x":0.0 },  "1,12",
-                { "c":"#aaaaaa" },
 				{ "w":2.0,  "h":1.0,  "x":0.0 },  "1,13",
+				{ "c":"#aaaaaa" },
 				{ "w":1.0,  "h":1.0,  "x":0.0 },  "2,15"
 
 			],
