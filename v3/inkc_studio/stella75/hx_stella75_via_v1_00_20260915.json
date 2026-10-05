@@ -2,7 +2,7 @@
     "name": "Stella 75",
     "vendorId": "0xFFFE",
     "productId": "0x00A3",
-    "keycodes": ["qmk_rgb_matrix_keycodes"],
+	"keycodes": ["qmk_lighting"],
     "menus": [
       {
         "label": "Lighting",

@@ -10,7 +10,7 @@
 			"content":
 			[
 				{
-					"label": "Backlight",
+					"label": "Backlight / \u8f74\u706f",
 					"content":
 					[
 						{
@@ -89,7 +89,7 @@
 					]
 				},
 				{
-					"label": "logo",
+					"label": "logo / \u94ed\u724c\u706f",
 					"content":
 					[
 						{
@@ -110,8 +110,8 @@
 								[ "fixed wave", 2 ],
 								[ "spectrum", 3 ],
 								[ "breathe", 4 ],
-								[ "light", 5 ],
-								[ "shutdown",6 ]
+								[ "light / \u5355\u8272\u6a21\u5f0f", 5 ],
+								[ "shutdown / \u5173\u95ed",6 ]
 							]
 						},
 						{
@@ -131,7 +131,7 @@
 				},
 
 				{
-					"label": "side",
+					"label": "side / \u4fa7\u706f",
 					"content":
 					[
 						{
@@ -152,8 +152,8 @@
 								[ "fixed wave", 2 ],
 								[ "spectrum", 3 ],
 								[ "breathe", 4 ],
-								[ "light", 5 ],
-								[ "shutdown",6 ]
+								[ "light / \u5355\u8272\u6a21\u5f0f", 5 ],
+								[ "shutdown / \u5173\u95ed",6 ]
 							]
 						},
 						{
