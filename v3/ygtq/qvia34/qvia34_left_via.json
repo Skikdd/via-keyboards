@@ -2,7 +2,7 @@
   "name": "QVIA34-Left",
   "vendorId": "0x28E9",
   "productId": "0xCB73",
-  "keycodes": [ "qmk_lighting" ],
+  "keycodes": [ "qmk_lighting"],
   "menus": [
     {
       "label": "Lighting",
@@ -44,6 +44,7 @@
                 "Dual Beacon",
                 "Rainbow Beacon",
                 "Rainbow Pinwheels",
+                "Flower Blooming",
                 "Raindrops",
                 "Jellybean Raindrops",
                 "Hue Breathing",
@@ -51,7 +52,26 @@
                 "Hue Wave",
                 "Pixel Rain",
                 "Pixel Flow",
-                "Solid Reactive"
+                "Pixel Fractal",
+                "Typing Heatmap",
+                "Digital Rain",
+                "Solid Reactive Simple",
+                "Solid Reactive",
+                "Solid Reactive Wide",
+                "Solid Reactive Multi Wide",
+                "Solid Reactive Cross",
+                "Solid Reactive Multi Cross",
+                "Solid Reactive Nexus",
+                "Solid Reactive Multi Nexus",
+                "Splash",
+                "Multi Splash",
+                "Solid Splash",
+                "Solid Multi Splash",
+                "Starlight Smooth",
+                "Starlight",
+                "Starlight Dual Sat.",
+                "Starlight Dual Hue",
+                "Riverflow"
               ]
             },
             {
@@ -62,7 +82,7 @@
               "content": [ "id_qmk_rgb_matrix_effect_speed", 3, 3 ]
             },
             {
-              "showIf": "{id_qmk_rgb_matrix_effect} != 0 && {id_qmk_rgb_matrix_effect} != 24 && {id_qmk_rgb_matrix_effect} != 28 && {id_qmk_rgb_matrix_effect} != 29 && {id_qmk_rgb_matrix_effect} != 32",
+              "showIf": "{id_qmk_rgb_matrix_effect} != 0 && {id_qmk_rgb_matrix_effect} != 25 && {id_qmk_rgb_matrix_effect} != 29 && {id_qmk_rgb_matrix_effect} != 30 && {id_qmk_rgb_matrix_effect} != 33",
               "label": "Color",
               "type": "color",
               "content": [ "id_qmk_rgb_matrix_color", 3, 4 ]
@@ -77,6 +97,37 @@
         {
           "label": "System Setting",
           "content": [
+            {
+              "label": "Debounce Type (\u6d88\u6296\u7c7b\u578b)",
+              "type": "dropdown",
+              "options": [
+                "asym_eager_defer_pk (\u6309\u4e0b\u7acb\u5373\u54cd\u5e94\uff0c\u91ca\u653e\u6d88\u6296)",
+                "sym_defer_g (\u6574\u677f\u7a33\u5b9a\u540e\u4e0a\u62a5)",
+                "sym_defer_pk (\u9010\u952e\u7a33\u5b9a\u540e\u4e0a\u62a5)",
+                "sym_defer_pr (\u9010\u884c\u7a33\u5b9a\u540e\u4e0a\u62a5)",
+                "sym_eager_pk (\u9010\u952e\u7acb\u5373\u54cd\u5e94)",
+                "sym_eager_pr (\u9010\u884c\u7acb\u5373\u54cd\u5e94)"
+              ],
+              "content": [ "id_custom_debounce_type", 0, 67 ]
+            },
+            {
+              "label": "Debounce Cnt (\u6d88\u6296\u65f6\u95f4\uff0c\u006d\u0073\uff1b\u0030)",
+              "type": "range",
+              "options": [ 0, 50 ],
+              "content": [ "id_custom_debounce_cnt", 0, 68 ]
+            },
+            {
+              "label": "Row Select Delay (\u9009\u901a\u7b49\u5f85\uff0c\u3bc\u0073)",
+              "type": "range",
+              "options": [ 0, 100 ],
+              "content": [ "id_custom_io_select_delay", 0, 66 ]
+            },
+            {
+              "label": "Row Unselect Delay (\u5207\u884c\u7b49\u5f85\uff0c\u00b5\u0073)",
+              "type": "range",
+              "options": [ 0, 100 ],
+              "content": [ "id_custom_io_delay", 0, 65 ]
+            },
             {
               "label": "Device Mode",
               "type": "dropdown",
@@ -127,46 +178,6 @@
                 "type": "range",
                 "options": [ 50, 250 ],
                 "content": [ "id_custom_tap_term", 0, 8 ]
-            },
-            {
-              "label": "Battery",
-              "type": "range",
-              "options": [ 0, 100 ],
-              "content": [ "id_custom_battery_level", 0, 5 ]
-            },
-            {
-                "label": "Version Major",
-                "type": "dropdown",
-                "options": [
-                  "0",
-                  "1",
-                  "2",
-                  "3",
-                  "4",
-                  "5",
-                  "6",
-                  "7",
-                  "8",
-                  "9"
-                ],
-                "content": [ "id_custom_version_major", 0, 6 ]
-            },
-            {
-                "label": "Version Minor",
-                "type": "dropdown",
-                "options": [
-                  "0",
-                  "1",
-                  "2",
-                  "3",
-                  "4",
-                  "5",
-                  "6",
-                  "7",
-                  "8",
-                  "9"
-                ],
-                "content": [ "id_custom_version_minor", 0, 7 ]
             }
           ]
         }
@@ -227,7 +238,7 @@
           "x": 6.25
         },
         "0,0",
-        "0,1\n\n\n\n\n\n\n\n\ne0",
+        "0,1",
         "0,2",
         "0,3",
         "0,4",
@@ -358,28 +369,39 @@
           "w": 1.25
         },
         "4,0",
-        "4,1",
+        "4,1"
+      ],
+      [
         {
+          "rx": 1.25,
+          "ry": 0.5,
+          "y": 4.5,
+          "x": 8.5,
           "w": 1.25
         },
-        "4,2"
+        "4,6\n\n\n\n\n\n\n\n\ne0"
       ],
       [
         {
-          "y": -0.5,
-          "x": 11,
-          "w": 2
+          "r": 15,
+          "rx": 2.75,
+          "ry": 1,
+          "y": 1.7000000000000002,
+          "x": 9.25,
+          "w": 1.25
         },
-        "4,5"
+        "4,5\n\n\n\n\n\n\n\n\ne0"
       ],
       [
         {
-          "r": 20,
-          "y": -6,
-          "x": 14.25,
-          "h": 1.75
+          "r": 30,
+          "rx": 16.5,
+          "ry": 4.5,
+          "y": 2.75,
+          "x": -2.8499999999999996,
+          "w": 1.25
         },
-        "4,6"
+        "4,2\n\n\n\n\n\n\n\n\ne0"
       ]
     ]
   }
