@@ -117,7 +117,7 @@
               "content": [ "id_custom_debounce_cnt", 0, 68 ]
             },
             {
-              "label": "Row Select Delay (\u9009\u901a\u7b49\u5f85\uff0c\u3bc\u0073)",
+              "label": "Row Select Delay (\u9009\u901a\u7b49\u5f85，μs)",
               "type": "range",
               "options": [ 0, 100 ],
               "content": [ "id_custom_io_select_delay", 0, 66 ]
